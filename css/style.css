@@ -91,3 +91,12 @@ footer.page-footer i:hover {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem
 }
+
+footer .container {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+ul ul li {
+  margin-left: 1rem;
+}
