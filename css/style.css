@@ -75,12 +75,8 @@ footer.page-footer i:hover {
   margin-top: 2rem;
 }
 
-.card.horizontal:first-of-type {
-  margin-top: 2.5rem;
-}
-
 .card.horizontal:last-of-type {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .card-action a {
@@ -89,4 +85,9 @@ footer.page-footer i:hover {
 
 .card-action a:hover {
   color: #81d4fa !important;
+}
+
+.container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
 }
