@@ -70,3 +70,23 @@ footer.page-footer i {
 footer.page-footer i:hover {
   color: #00695c;
 }
+
+.card.horizontal {
+  margin-top: 2rem;
+}
+
+.card.horizontal:first-of-type {
+  margin-top: 2.5rem;
+}
+
+.card.horizontal:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+.card-action a {
+  color: #03a9f4 !important;
+}
+
+.card-action a:hover {
+  color: ##81d4fa !important;
+}
