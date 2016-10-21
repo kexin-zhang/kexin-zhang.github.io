@@ -59,3 +59,14 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+footer.page-footer i {
+  color: #00796b;
+  font-size: 10em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer.page-footer i:hover {
+  color: #00695c;
+}
