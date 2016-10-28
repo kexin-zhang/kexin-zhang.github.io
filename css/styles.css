@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+}
+
+#pic-wrapper {
+	background-image: url("stardust/stardust/stardust.png");
+}
+
+.flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#top-section {
+	height: 85vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #ecf0f1;
+	flex-direction: column;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#top-nav {
+	height: 5vh;
+	justify-content: flex-end;
+}
+
+#top-nav a {
+	color: #ecf0f1;
+	padding-right: 2.5rem;
+	cursor: pointer;
+}
+
+#top-nav a:hover {
+	text-decoration: underline;
+}
+
+#scroll-down {
+	height: 5vh;
+	justify-content: center;
+}
+
+#scroll-down i {
+	color: #ecf0f1;
+	font-size: 5vh;
+}

@@ -1,172 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Kexin Zhang</title>
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link rel="stylesheet" href="css/Skeleton-2.0.4/css/normalize.css" type="text/css">
+		<link rel="stylesheet" href="css/Skeleton-2.0.4/css/skeleton.css" type="text/css">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://use.fontawesome.com/d2c891c2de.js"></script>
-</head>
-<body>
+		<script src="https://use.fontawesome.com/d2c891c2de.js"></script>
 
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <h1 class="header center teal-text text-lighten-2">Hi, I'm Kexin</h1>
-        <div class="row center">
-          <h5 class="header col center s12 light">Student with huge interests in data analytics, web development, and computational research.</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="example1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+		<title>Kexin Zhang</title>
+	</head>
 
+	<body>
 
-  <div class = "container" style="padding-top:1rem">
-    <div class="section">
-      <div class="row center">
-        <div class="col s12 m4">
-          <img src="headshot.jpg" alt="" class="circle responsive-img center">
-          <h5>Kexin Zhang</h5>
-        </div>
-        <div class="col s12 m8">
-          <h5 class="center">About Me</h5>
-          <p class="light left-align" id="description">I am a second year student at Georgia Tech, studying industrial engineering and minoring in computer science. I research and analyze twitter datasets for the School of Interactive Computing's Social Computing lab. I also coordinate consulting projects between nonprofits and teams of students for <a href="http://www.scnogt.com" target="_blank">GT SCNO</a>. In my free time, I enjoy listening to music, watching Game of Thrones, and making espresso.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+		<div id="pic-wrapper">
+			<div id="top-nav" class="flex">
+				<h4><a>About</a></h4>
+				<h4><a>Experience</a></h4>
+				<h4><a>Skills</a></h4>
+				<h4><a>Project</a></h4>
+				<h4><a>Contact</a></h4>
+			</div>
+			<div id="top-section" class="flex">
+				<div class="row">
+					<h1>Hi, I'm Kexin.</h1>
+				</div>
+				<div class="row">
+					<h3>Student. Developer. Researcher. Hacker.</h3>
+				</div>
+			</div>
+			<div id="scroll-down" class="flex">
+				<span><i class="fa fa-angle-double-down" aria-hidden="true"></i><span>
+			</div>
+		</div>
 
-  <div class="container">
-    <div class="section">
-      <div class="row">
+	</body>
 
-        <div class="col s12 m4">
-          <h5 class="center">Experience</h5>
-          <p class="light">Currently, I'm an undergrad researcher in Georgia Tech's Social Computing lab. I have also worked as a full stack web developer at Stackfolio, an Atlanta-based financial technology startup, and as a researcher for Georgia Tech's Vertically Integrated Projects.</p>
-        </div>
-
-        <div class="col s12 m4">
-          <h5 class="center">Skills</h5>
-          <ul>
-            <li>Python 2.7 and 3.4</li>
-              <ul>
-                <li>Proficient in Django and Flask web frameworks. Familiar with numpy, scipy, and pandas libraries.</li>
-              </ul>
-            <li>JavaScript</li>
-              <ul>
-                <li>Proficient in jQuery. Familiar with D3.js and common charting libraries (Chart.js, C3.js, Leaflet.js, etc.)</li>
-              </ul>
-            <li>HTML/CSS</li>
-            <li>Java</li>
-            <li>R</li>
-          </ul>
-        </div>
-
-        <div class="col s12 m4">
-          <h5 class="center">Interests</h5>
-          <p class="light">I am always looking for new things to pick up, but my current interests lie in data science, particularly visualizing data. I am also highly interested in web development and nonprofit work. Ultimately, I want to leverage technology and data to further my understanding of the world around me</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header col center s12 light">Projects</h1>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-      <div class="col s12 m12">
-
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="Screenshot from 2016-10-23 21-14-30.png">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <span class="card-title">A Week in the News</span>
-              <p>I scraped news articles from 12 sources for a week. Then, I built this news exploration site that generates visualizations of article topics and keywords. The site shows the most popular topics, volume of articles over time, and keywords commonly used in articles about the topic.</p>
-              <br>
-              <p>Built with: MongoDB, Flask (Python), HTML/CSS, JavaScript (D3.js, MetricGraphics.js)</p>
-              <br>
-            </div>
-            <div class="card-action">
-              <a href="https://github.com/kexin-zhang/articles">Source Code</a>
-              <a href="http://weekinthenews-147201.appspot.com/">Site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="screenshot.png">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <span class="card-title">Broadband Access Map</span>
-              <p>I created an interactive SVG map visualization displaying digital divide index scores.</p>
-              <br>
-              <p>Built with: Python (Kartograph.py, Fiona, Pyshp), HTML/CSS, JavaScript (Kartograph.js, Raphael)</p>
-            </div>
-            <div class="card-action">
-              <a href="#">Source Code</a>
-              <a href="#">Site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card horizontal">
-          <div class="card-image">
-            <img src="screenshot.png">
-          </div>
-          <div class="card-stacked">
-            <div class="card-content">
-              <span class="card-title">Project Name</span>
-              <p>I am a very simple card. I am good at containing small bits of information.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">Source Code</a>
-              <a href="#">Site</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class ="row center">
-        <a href="https://github.com/kexin-zhang" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/kexinzhang1" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="mailto:kxin.zhang@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
 </html>
