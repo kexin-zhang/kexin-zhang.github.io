@@ -18,4 +18,10 @@ $(document).ready(function() {
 	        scrollTop: $("#main").offset().top},
 	        'slow');
 	});
+
+	$("img").hover(function(){
+      $(this).fadeTo("fast",0.3);
+    },function(){
+      $(this).fadeTo("fast",1.0);
+    });
 })

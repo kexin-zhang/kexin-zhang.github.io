@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-	margin-top: 5rem;
+	padding-top: calc(5rem + 5vh);
 	margin-bottom: 5rem;
 }
 
@@ -77,4 +77,13 @@ body {
 .container h6 {
 	font-weight: 600;
 	margin-bottom: .2rem;
+}
+
+.container img {
+	width: 100%;
+}
+
+.wrap {
+	background-color: #34495e;
+	line-height: 0;
 }
