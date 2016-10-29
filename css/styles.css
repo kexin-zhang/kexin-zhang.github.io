@@ -15,7 +15,7 @@ body {
 }
 
 #top-section {
-	height: 85vh;
+	height: 90vh;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -36,6 +36,8 @@ body {
 	color: #ecf0f1;
 	padding-right: 2.5rem;
 	cursor: pointer;
+    padding-top: 5px;
+    font-size: 2rem;
 }
 
 #top-nav a:hover {
@@ -50,4 +52,29 @@ body {
 #scroll-down i {
 	color: #ecf0f1;
 	font-size: 5vh;
+	cursor: grab;
+}
+
+.container {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.container h4, #top-nav a {
+	text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.container h4 {
+	font-size: 1.6rem;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.container h6 {
+	font-weight: 600;
+	margin-bottom: .2rem;
 }
