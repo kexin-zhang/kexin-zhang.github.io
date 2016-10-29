@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-	padding-top: calc(5rem + 5vh);
+	padding-top: 5rem;
 	margin-bottom: 5rem;
 }
 
@@ -84,6 +84,51 @@ body {
 }
 
 .wrap {
-	background-color: #34495e;
 	line-height: 0;
+	position: relative;
+	margin-bottom: 4rem;
+}
+
+.wrap .content {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+	background-color: rgba(52,73,94, 0.85);
+	color: #ecf0f1;
+}
+
+.content p {
+	line-height: 1.6rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	text-align: center;
+}
+
+.wrap:last-of-type {
+	margin-bottom: 0;
+}
+
+#footer {
+	width: 100%;
+	background-color: #546e7a;
+	text-align: center;
+}
+
+#footer i {
+	font-size: 10rem;
+	padding: 1rem;
+	color: #37474f;
+}
+
+#footer i:hover {
+	color: #263238;
+}
+
+.container .row {
+	padding-bottom: 1rem;
 }

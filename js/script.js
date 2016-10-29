@@ -1,3 +1,5 @@
+AOS.init({duration: 1200});
+
 $.fn.extend({
     animateCss: function (animationName) {
         var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -20,8 +22,14 @@ $(document).ready(function() {
 	});
 
 	$("img").hover(function(){
-      $(this).fadeTo("fast",0.3);
+      $(this).next('.content').show();
     },function(){
-      $(this).fadeTo("fast",1.0);
+      $(this).next('.content').hide();
     });
+
+    $('.content').hover(function(){
+        $(this).show();
+    }, function(){
+        $(this).hide();
+    })
 })

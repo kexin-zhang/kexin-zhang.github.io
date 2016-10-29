@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,18 +16,13 @@
 
 		<div id="pic-wrapper">
 			<div id="top-nav" class="flex">
-				<h4><a>About</a></h4>
-				<h4><a>Experience</a></h4>
-				<h4><a>Skills</a></h4>
-				<h4><a>Projects</a></h4>
-				<h4><a>Contact</a></h4>
 			</div>
 			<div id="top-section" class="flex">
 				<div class="row">
 					<h1>Hi, I'm Kexin.</h1>
 				</div>
 				<div class="row">
-					<h3>Student. Developer. Researcher. Hacker.</h3>
+					<h4>Student. Developer. Researcher. Hacker.</h4>
 				</div>
 			</div>
 			<div id="scroll-down" class="flex">
@@ -37,12 +32,12 @@
 
 		<div id="main">
 			<div class="container">
-				<div class="row">
+				<div class="row" data-aos="fade-right">
 					<div class="three columns">
 						<h4>About</h4>
 					</div>
 					<div class="nine columns">
-						<p>I am a second year Georgia Tech student with a major in <span class="bold">industrial engineering</span> and a minor in <span class="bold">computer science</span>. At Georgia Tech, I research in the School of Interactive Computing's comp.social lab. I'm also on the executive board of GT SCNO, coordinating pro bono consulting projects for Atlanta nonprofits. Through my experiences, I've developed strong interests in <span class="bold"> data science, analytics, web development, and nonprofit work.</span> Ultimately, I want to leverage technology to further understand and analyze the world around me.</p>
+						<p>I am a second year student at <span class="bold">Georgia Tech</span> with a major in <span class="bold">industrial engineering</span> and a minor in <span class="bold">computer science</span>. At Georgia Tech, I research in the School of Interactive Computing's <a target="_blank" href="http://comp.social.gatech.edu/">comp.social lab</a>. I'm also on the executive board of <a href="http://scnogt.com" target="_blank">GT SCNO</a>, coordinating pro bono consulting projects for Atlanta nonprofits. Through my experiences, I've developed strong interests in <span class="bold"> data science, analytics, web development, and nonprofit work.</span> Ultimately, I want to leverage technology to further understand and analyze the world around me.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -52,6 +47,7 @@
 					<div class="nine columns">
 						<p>Currently, I am an <span class="bold">undergraduate research assistant</span> in Georgia Tech's social computing lab. My current project involves writing scripts in Python and R to analyze language, location, and other factors in large Twitter datasets.</p>
 						<p>I've also interned as a <span class="bold">full stack web developer</span> at Stackfolio, a financial technology startup based in Atlanta. I spent a summer developing extensive features for Stackfolio's banking analytics and wholesale loan platforms. I worked with MongoDB, Django (Python), HTML, CSS, and JavaScript in a fast-paced, agile environment.</p>
+						<p>Outside of my technical experiences, I've also had experience as a <span class="bold">project lead</span> on a year long student consulting project for Teach for America's Atlanta division. My team conducted competitor analysis, cost benefit analysis, and survey data analysis to develop an extensive targeted marketing strategy geared towards Georgia Tech students.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -62,20 +58,23 @@
 						<h6>Programming Languages</h6>
 						<ul>
 							<li>Python</li>
+							<li>JavaScript</li>
 							<li>Java</li>
 							<li>R</li>
 						</ul>
 
 						<h6>Web Development</h6>
 						<ul>
-							<li>Python</li>
+							<li>Frameworks</li>
 								<ul>
-									<li>Frameworks: Django, Flask</li>
+									<li>Django (Python)</li>
+									<li>Flask (Python)</li>
+									<li>Meteor (JavaScript)</li>
 								</ul>
-							<li>JavaScript</li>
+							<li>JavaScript Libraries</li>
 								<ul>
-									<li>Frameworks: Meteor</li>
-									<li>Libraries: jQuery, D3.js, Raphael.js, Chart.js, Leaflet.js</li>
+									<li>jQuery</li>
+									<li>Charting libraries: D3.js, Chart.js, C3.js, etc.</li>
 								</ul>
 							<li>HTML5</li>
 							<li>CSS3</li>
@@ -102,17 +101,65 @@
 					<div class="nine columns">
 						<div class="wrap">
 							<img src="screenshot.png"/>
+							<div class="content" style="display:none;">
+								<h5>A Week in the News</h5>
+								<p>For a week, I scraped articles from 12 news sources.
+								I created a web app that generates visualizations of the trends and keywords in those articles.
+								</p>
+								<br>
+								<p>Built with: MongoDB, Flask(Python), JavaScript (D3.js, MetricGraphics.js), HTML5/CSS3</p>
+								<a class="button button-primary" target="_blank" href="http://weekinthenews-147201.appspot.com/">Site</a>
+								<a class="button button-primary" target="_blank" href="https://github.com/kexin-zhang/weekinthenews">Source code</a>
+							</div>
 						</div>
 						<div class="wrap">
 							<img src="screenshot1.png"/>
+							<div class="content" style="display:none;">
+								<h5>Broadband Access Map</h5>
+								<p>A friend and I created an interactive SVG map that displays the digital divide index.</p>
+								<p>Built with: Python (Kartograph.py, Fiona, Pyshp), JavaScript (Raphael.js, Kartograph.js), HTML5/CSS3</p>
+								<a class="button button-primary" target="_blank" href="https://vishnu-ram.github.io/Broadband-Map/">Site</a>
+								<a class="button button-primary" target="_blank" href="https://github.com/vishnu-ram/Broadband-Map">Source code</a>
+							</div>
+						</div>
+
+						<div class="wrap">
+							<img src="screenshot3.png"/>
+							<div class="content" style="display:none;">
+								<h5>Fin.dash</h5>
+								<p>This project was my group's submission for HackGT 2016.
+									Fin.dash is a personal finance dashboard for Capitol One account holders. It features several
+										interactive visualizations and tools to help users understand their spending habits.</p>
+								<p>Awarded Best User Experience out of 60+ entries.</p>
+								<p>Built with: Flask (Python), JavaScript (Chart.js, Leaflet.js), HTML5/CSS3</p>
+								<a class="button button-primary" target="_blank" href="https://github.com/ivychen/fin-dash">Source code</a>
+							</div>
+						</div>
+
+						<div class="wrap">
+							<img src="screenshot4.png"/>
+							<div class="content" style="display:none;">
+								<h5>Wikimaps</h5>
+								<p>Wikimaps allows users to explore Wikipedia by searching for a topic.
+								The site builds a network graph with related topics. Users can keep adding topics to the graph.</p>
+								<p>Built with: Flask (Python), JavaScript (Vis.js), HTML5/CSS3</p>
+								<a class="button button-primary" target="_blank" href="https://github.com/kexin-zhang/wikimaps3">Source code</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div id="footer">
+			<span><a target="_blank" href="https://github.com/kexin-zhang"><i class="fa fa-github" aria-hidden="true"></i></a></span>
+			<span><a target="_blank" href="https://www.linkedin.com/in/kexinzhang1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
+			<span><a href="mailto:kxin.zhang@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></span>
+		</div>
+
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
 	<script src="js/script.js"></script>
 
 </html>
