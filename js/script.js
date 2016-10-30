@@ -10,6 +10,10 @@ $.fn.extend({
 });
 
 $(document).ready(function() {
+    $('#pic-wrapper').particleground({
+        dotColor: 'rgba(189,195,199,.4)',
+        lineColor: 'rgba(189,195,199,.4)'
+    });
 
 	$('#scroll-down i').mouseenter(function(){
 		$(this).animateCss('bounce');
