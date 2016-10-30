@@ -35,5 +35,16 @@ $(document).ready(function() {
         $(this).show();
     }, function(){
         $(this).hide();
-    })
+    });
+
+    // $(document).scroll(function() {
+    //     var y = $(document).scrollTop();
+    //     if (y > 951) {
+    //         $('#nav').addClass('sticky');
+    //         $('.container .row:first-of-type').css('padding-top', '10rem');
+    //     } else {
+    //         $('#nav').removeClass('sticky');
+    //         $('.container .row:first-of-type').css('padding-top', '5rem');
+    //     }
+    // });
 })
