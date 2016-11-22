@@ -140,18 +140,18 @@ body {
 
 #footer {
 	width: 100%;
-	background-color: #546e7a;
+	background-color: #263238;
 	text-align: center;
 }
 
 #footer i {
 	font-size: 10rem;
 	padding: 1rem;
-	color: #37474f;
+	color: ##37474f;
 }
 
 #footer i:hover {
-	color: #263238;
+	color: #455a64;
 }
 
 .container .row {
@@ -159,7 +159,7 @@ body {
 }
 
 .sticky {
-	position: fixed; 
+	position: fixed;
 	top : 0;
 	left : 0;
 }
