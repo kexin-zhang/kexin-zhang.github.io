@@ -7,6 +7,12 @@ body {
 	background-color: #263238;
 	position: relative;
 	height: 100vh;
+	font-family: 'Lato', sans-serif;
+}
+
+#pic-wrapper h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 .flex {
@@ -162,4 +168,22 @@ body {
 	position: fixed;
 	top : 0;
 	left : 0;
+}
+
+@media (max-width: 750px) {
+	p, .container li {
+		font-size: 1.3em;
+	}
+
+	.container h4 {
+		font-size: 1.8em;
+	}
+
+	.container h6 {
+		font-size: 1.4em;
+	}
+
+	.content p {
+		line-height: 1.8rem;
+	}
 }

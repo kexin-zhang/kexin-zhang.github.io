@@ -37,6 +37,16 @@ $(document).ready(function() {
         $(this).hide();
     });
 
+    function switchWord() {
+        var words = ['student', 'developer', 'researcher', 'hacker', 'data enthusiast'];
+        var randomWord = words[Math.floor(Math.random()*words.length)];
+        while (randomWord == $('#word').text()) {
+            var randomWord = words[Math.floor(Math.random()*words.length)];
+        }
+        $('#word').text(randomWord);
+    }
+
+
     // $(document).scroll(function() {
     //     var y = $(document).scrollTop();
     //     if (y > 951) {
