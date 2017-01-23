@@ -170,7 +170,7 @@ body {
 	left : 0;
 }
 
-@media (max-width: 750px) {
+@media (max-device-width: 550px) {
 	p, .container li {
 		font-size: 1.3em;
 	}
