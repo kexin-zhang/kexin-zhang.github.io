@@ -184,7 +184,11 @@ body {
 	}
 
 	.content p {
-		line-height: 2.0rem;
+		line-height: 2.1rem;
+	}
+
+	.content h5 {
+		font-size: 2.0em;
 	}
 
 	#pic-wrapper h1 {
