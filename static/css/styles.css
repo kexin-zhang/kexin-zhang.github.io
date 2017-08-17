@@ -148,8 +148,6 @@ html, body {
 
 #intro-wrapper {
   padding: 1rem;
-  border-top: #50596c 1px solid;
-  border-bottom: #50596c 1px solid;
   z-index: 100;
 }
 
