@@ -119,8 +119,13 @@ html, body {
     width: 100% !important;
   }
 
-  .navbar-brand mr-10 {
+  .navbar-brand.mr-10 {
     display: none;
+  }
+
+  .resume-container {
+    width: 100%;
+    height: 70vh;
   }
 
 /*  #footer-icons i {
@@ -304,4 +309,15 @@ ul {
 
 ul li {
   margin-top: .2rem;
+}
+
+.resume-container {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .resume-container {
+    width: 580px;
+    height: 760px;
+  }
 }
