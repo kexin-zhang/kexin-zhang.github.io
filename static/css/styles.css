@@ -67,7 +67,7 @@ html, body {
     overflow-x: scroll;
   }
 
-  p {
+/*  p {
     font-size: 1.2em;
   }
 
@@ -109,27 +109,27 @@ html, body {
 
   #icons i {
     font-size: 1.1em;
-  }
+  }*/
 
   .wrap {
     width: 100% !important;
-  }
-
-  .navbar-section a {
-    font-size: 1.5em !important;
   }
 
   #intro {
     width: 100% !important;
   }
 
-  #footer-icons i {
+  .navbar-brand mr-10 {
+    display: none;
+  }
+
+/*  #footer-icons i {
     font-size: 3em !important;
   }
 
   .section-header {
     padding: 2rem !important;
-  }
+  }*/
 }
 
 #intro {
