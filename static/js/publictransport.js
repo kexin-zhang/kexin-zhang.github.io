@@ -60,8 +60,10 @@ var z = d3.scaleOrdinal()
 
 var svg = d3.select("#population")
   			.append("svg")
-  			.attr("width", width + margin.left + margin.right)
-  			.attr("height", height + margin.top + margin.bottom);
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
 var g = svg.append("g")
 		   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -153,8 +155,10 @@ var bubble = d3.pack(area_data)
 
 var svg = d3.select('#area')
 			.append("svg")
-			.attr("width", diameter)
-			.attr("height", diameter + margin_top);
+      .attr("height", "100%")
+      .attr("width", "100%")
+      .attr("viewBox", "0 0 " + diameter + " " + (diameter + margin_top))
+      .attr("preserveAspectRatio", "xMidYMid meet");
 
 var g = svg.append("g")
 			.attr("class", "bubble")
@@ -235,8 +239,10 @@ var width = 400,
 
 var svg = d3.select("#density")
 			.append("svg")
-			.attr("width", width)
-			.attr("height", height);
+        .attr("height", "100%")
+        .attr("width", "100%")
+        .attr("viewBox", "0 0 " + width + " " + height)
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
 width = width - margin.left - margin.right;
 height = height - margin.top - margin.bottom;
@@ -440,8 +446,10 @@ var y = d3.scaleBand()
 
 var svg = d3.select("#ridership")
 			.append("svg")
-			.attr("height", height + margin.top + margin.bottom)
-			.attr("width", width + margin.left + margin.right);
+      .attr("height", "100%")
+      .attr("width", "100%")
+      .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+      .attr("preserveAspectRatio", "xMidYMid meet");
 
 var g = svg.append("g")
 		   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -536,21 +544,26 @@ var color = d3.scaleOrdinal(d3.schemeCategory20c);
 
 d3.select("#percent-subway-title")
   .append("svg")
-  .attr("width", (radius + padding)*8)
-  .attr("height", margin_top)
+  .attr("height", "100%")
+  .attr("width", "100%")
+  .attr("viewBox", "0 0 " + ((radius + padding)*8) + " " + margin_top)
+  .attr("preserveAspectRatio", "xMidYMid meet")
   .append("text")
-  .attr("x", 175)
+  .attr("x", 300)
   .attr("y", 40)
-  .text("2015 Means of Transportation to Work");
+  .text("2015 Means of Transportation to Work")
+  .style("font-size", "10px")
+  .style("text-anchor", "middle");
 
 var svg = d3.select("#percent-subway")
             .selectAll(".pie")
             .data(percent_public)
             .enter()
+            .append("div")
+            .attr("class", "pie")
             .append("svg")
             .attr("width", (radius + padding) * 2)
             .attr("height", (radius * 2))
-            .attr("class", "pie")
             .append("g")
             .attr("transform", "translate(" + radius + "," + radius + ")");
 
@@ -590,8 +603,10 @@ var modes = [
 
 var legend = d3.select("#percent-subway-legend")
             .append("svg")
-            .attr("width", (radius + padding)*8)
-            .attr("height", 30)
+            .attr("height", "100%")
+            .attr("width", "100%")
+            .attr("viewBox", "0 0 " + ((radius + padding)*8) + " " + margin_top)
+            .attr("preserveAspectRatio", "xMidYMid meet")
             .append("g")
             .attr("font-family", "sans-serif")
             .attr("font-size", 10)

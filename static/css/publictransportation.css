@@ -59,6 +59,7 @@
 #percent-subway, #percent-subway-title {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
 }
 
 #percent-subway svg {
@@ -136,5 +137,27 @@
     justify-content: center !important;
     margin-bottom: 10px;
     width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #area, #density {
+    width: 38%;
+  }
+
+  #percent-subway-legend {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #ridership, #population {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #area, #density {
+    width: 85%;
   }
 }
