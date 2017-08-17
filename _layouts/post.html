@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+	<body>
+		{% include analytics.html %}
+		<div class="main">
+			{% include nav.html %}
+			<div class="columns-main">
+				<div class="post-container">
+					<div class="title">
+						<h3>{{ page.title }}</h3>
+					</div>
+					<div class="post-content">
+						{{ page.content }}
+					</div>
+				</div>
+			</div>
+			{% include footer.html %}
+		</div>
+		<script src="https://use.fontawesome.com/d2c891c2de.js"></script>
+	</body>
+</html>

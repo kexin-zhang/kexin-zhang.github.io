@@ -1,0 +1,308 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.main, .main-home {
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+}
+
+.main-home {
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+  padding-bottom: 10rem;
+}
+
+.section-header {
+  padding: 1rem;
+  background-color: #f8f9fa;
+/*  border-bottom: 1px solid #cfd8dc;*/
+}
+
+.main-home .section-header {
+  background-color: rgba(248,249,250,.6)
+}
+
+.navbar-section a {
+  color: #50596c !important;
+}
+
+.header {
+  padding-top: 6rem;
+  text-align: center;
+  margin: auto;
+}
+
+.columns-main {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 767px) {
+  .columns-main {
+    width: 95% !important;
+    overflow-x: scroll;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  h6 {
+    font-size: 1.5em;
+  }
+
+  h5 {
+    font-size: 1.6em;
+  }
+
+  h4 {
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #intro-wrapper h2 {
+    font-size: 3.1em;
+  }
+
+  #intro-wrapper h5 {
+    font-size: 2em;
+  }
+
+  #intro-wrapper p {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
+  #icons i {
+    font-size: 1.3em;
+  }
+
+  .wrap {
+    width: 100% !important;
+  }
+
+  .navbar-section a {
+    font-size: 1.5em !important;
+  }
+
+  #intro {
+    width: 100% !important;
+  }
+
+  #footer-icons i {
+    font-size: 3em !important;
+  }
+
+  .section-header {
+    padding: 2rem !important;
+  }
+}
+
+#intro {
+  margin: auto;
+  width: 60%;
+}
+
+.columns {
+  width: 100%;
+}
+
+#intro-wrapper {
+  padding: 1rem;
+  border-top: #50596c 1px solid;
+  border-bottom: #50596c 1px solid;
+  z-index: 100;
+}
+
+#icons span {
+  font-size: 3em;
+  padding: .75rem;
+}
+
+#icons {
+  text-align: center;
+}
+
+#intro-wrapper h2, #intro-wrapper h5 {
+  text-align: center;
+}
+
+.post-container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.post-container .title {
+  text-align: center;
+}
+
+.post-container .post-content {
+  flex-direction: column;
+}
+
+.post {
+  padding-top: 1rem;
+}
+
+.post:first-of-type {
+  padding-top: 0;
+}
+
+.post h5 {
+  margin-bottom: 0;
+}
+
+.post p.date {
+  margin-bottom: 0;
+  color: #b0bec5;
+}
+
+#projects #images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#images-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#resume {
+  margin: 0 auto;
+}
+
+#projects .title {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#projects .title h3 {
+  margin-bottom: .5rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #50596c;
+  padding: 1rem;
+  min-width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+#grid-footer {
+  max-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #50596c !important;
+}
+
+#footer-icons i {
+  font-size: 2em;
+  padding-right: .75rem;
+  padding-left: .75rem;
+}
+
+#footer-icons i:hover {
+  color: #263238;
+}
+
+.wrap {
+  position: relative;
+  width: 45%;
+  margin: 10px;
+}
+
+.wrap .content {
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(52,73,94, 0.85);
+  color: #ecf0f1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .content .btn {
+  background: none;
+  border-color: #ecf0f1;
+  color: #ecf0f1;
+}
+
+.wrap .content .btn:hover {
+  background-color: #ecf0f1;
+  color: rgba(52,73,94, 0.85);
+}
+
+#intro-wrapper img {
+  width: 100px;
+}
+
+th {
+  border-bottom: 1px solid #50596c;
+}
+
+th, td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table {
+  margin: 1.5em auto;
+  border-collapse: collapse;
+}
+
+ul {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: .2rem;
+}

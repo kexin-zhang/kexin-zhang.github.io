@@ -1,0 +1,41 @@
+---
+title: Projects
+layout: base
+permalink: /projects
+---
+
+<div id="projects">
+	<div class="title">
+		<h6>Hover over a project for more details.</h6>
+	</div>
+	<div id="images-container">
+		{% for project in site.projects %}
+		<div class="wrap">
+			<img src="{{ project.image }}"/>
+			<div class="content" style="display:none;">
+				<h5>{{ project.title }}</h5>
+				{{ project.content }}
+				<a class="btn" href="{{ project.github }}" target="_blank">Github</a>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+<script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+		$(".wrap img").hover(function(){
+	      $(this).next('.content').show();
+	    },function(){
+	      $(this).next('.content').hide();
+	    });
+
+	    $('.wrap .content').hover(function(){
+	        $(this).show();
+	    }, function(){
+	        $(this).hide();
+	    });
+
+	})
+</script>
