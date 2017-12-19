@@ -6,14 +6,14 @@ permalink: /projects
 
 <div id="projects">
 	<div class="title">
-		<h6>Hover over a project for more details.</h6>
+		<h5>Hover over a project for more details.</h5>
 	</div>
 	<div id="images-container">
 		{% for project in site.projects %}
 		<div class="wrap">
 			<img src="{{ project.image }}"/>
 			<div class="content" style="display:none;">
-				<h5>{{ project.title }}</h5>
+				<h4>{{ project.title }}</h4>
 				{{ project.content }}
 				<a class="btn" href="{{ project.github }}" target="_blank">Github</a>
 			</div>

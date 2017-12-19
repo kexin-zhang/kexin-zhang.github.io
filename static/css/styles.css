@@ -57,42 +57,14 @@ html, body {
   margin: 0 auto;
 }
 
-#intro p {
-  font-size: 1.1em;
+p {
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 767px) {
   .columns-main {
     width: 95% !important;
     overflow-x: scroll;
-  }
-
-/*  p {
-    font-size: 1.2em;
-  }
-
-  h6 {
-    font-size: 1.3em;
-  }
-
-  h5 {
-    font-size: 1.4em;
-  }
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.7em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  h1 {
-    font-size: 2.2em;
   }
 
   #intro-wrapper h2 {
@@ -109,7 +81,7 @@ html, body {
 
   #icons i {
     font-size: 1.1em;
-  }*/
+  }
 
   .wrap {
     width: 100% !important;
@@ -152,15 +124,20 @@ html, body {
 }
 
 #icons span {
-  font-size: 3em;
-  padding: .75rem;
+  font-size: 3.2em;
+  padding: 1rem;
+}
+
+#icons i {
+  font-size: 1.2em;
 }
 
 #icons {
+  margin-top: 3em;
   text-align: center;
 }
 
-#intro-wrapper h2, #intro-wrapper h5 {
+#intro-wrapper h1, #intro-wrapper h5 {
   text-align: center;
 }
 
@@ -178,15 +155,15 @@ html, body {
 }
 
 .post {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .post:first-of-type {
   padding-top: 0;
 }
 
-.post h5 {
-  margin-bottom: 0;
+.post h4 {
+  margin-bottom: .2em;
 }
 
 .post p.date {
@@ -242,7 +219,7 @@ html, body {
 }
 
 #footer-icons i {
-  font-size: 2em;
+  font-size: 2.5em;
   padding-right: .75rem;
   padding-left: .75rem;
 }
@@ -270,6 +247,10 @@ html, body {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+.wrap .content p {
+  font-size: 1.1em;
 }
 
 .wrap .content .btn {
@@ -318,4 +299,12 @@ ul li {
     width: 580px;
     height: 760px;
   }
+}
+
+.navbar .navbar-brand {
+  font-size: 1.8rem;
+}
+
+.navbar-section a {
+  font-size: 1.6rem;
 }
