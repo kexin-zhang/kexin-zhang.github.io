@@ -237,16 +237,17 @@ p {
 .wrap .content {
   position: absolute;
   top: 0;
-  padding: 15px;
-  display: flex;
+  padding: 1rem;
+/*  display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   background-color: rgba(52,73,94, 0.85);
   color: #ecf0f1;
   height: 100%;
   width: 100%;
   text-align: center;
+  overflow: auto;
 }
 
 .wrap .content p {
