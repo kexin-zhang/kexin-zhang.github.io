@@ -308,3 +308,7 @@ ul li {
 .navbar-section a {
   font-size: 1.6rem;
 }
+
+.content a {
+  color: #9fa8da;
+}

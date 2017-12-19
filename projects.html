@@ -9,7 +9,8 @@ permalink: /projects
 		<h5>Hover over a project for more details.</h5>
 	</div>
 	<div id="images-container">
-		{% for project in site.projects %}
+		{% assign sorted = (site.projects | sort: 'date') | reverse %}
+		{% for project in sorted %}
 		<div class="wrap">
 			<img src="{{ project.image }}"/>
 			<div class="content" style="display:none;">

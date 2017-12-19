@@ -2,6 +2,7 @@
 title: Move Up!
 image: /static/img/screenshot5.png
 github: https://github.com/kexin-zhang/hack-duke
+date: 2016-11-20
 ---
 
 Awarded Best Use of ESRI Platform at HackDuke.

@@ -2,6 +2,7 @@
 title: Fin.dash
 image: /static/img/screenshot3.PNG
 github: https://github.com/ivychen/fin-dash
+date: 2016-10-01
 ---
 Awarded Best User Experience at HackGT.
 
