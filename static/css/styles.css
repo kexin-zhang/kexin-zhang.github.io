@@ -61,6 +61,10 @@ p {
   font-size: 1.2em;
 }
 
+ol li, ul li {
+  font-size: 1.2em;
+}
+
 @media only screen and (max-width: 767px) {
   .columns-main {
     width: 95% !important;
