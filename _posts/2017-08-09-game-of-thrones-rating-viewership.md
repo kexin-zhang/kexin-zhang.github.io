@@ -4,6 +4,7 @@ layout: d3post
 author: Kexin Zhang
 script: /static/js/got.js
 css: /static/css/got.css
+additional: /static/js/d3-tip.js
 ---
 
 _**This post contains Game of Thrones spoilers up to and including Season 7 Episode 4.** All graphs included were created with D3.js!_

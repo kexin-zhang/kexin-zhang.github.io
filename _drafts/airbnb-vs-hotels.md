@@ -4,6 +4,7 @@ layout: d3post
 author: Kexin Zhang
 script: /static/js/airbnb-vs-hotels.js
 css: /static/css/airbnb-vs-hotels.css
+additional: /static/js/distance-limited-voronoi.js
 ---
 
 I just finished my fifth (!) semester at Georgia Tech. This semester, I took [CX 4242/CSE 6242 - Data and Visual Analytics](http://poloclub.gatech.edu/cse6242/2017fall/){:target="_blank"}, which is a essentially a survey of techniques for exploring, analyzing, and visualizing data. Our homeworks covered topics like SQL, D3, Hadoop, Spark, and some machine learning basics. The class also included an open-ended group project, where we were expected to propose a topic and use a "large" dataset, nontrivial analysis, and interactive visualization to address that topic. My group picked comparing the difference in "value" between Airbnbs and hotels, and we focused on New York City. 
@@ -26,7 +27,11 @@ Location and price by location varies for Airbnbs and hotels. For Airbnbs, I am 
 
 Looking at the city as a whole isn't particularly helpful for people actually looking for somewhere to stay when visiting New York City. We wanted more detailed comparisons, but **which Airbnbs do we compare to which hotels?**
 
-We put all of this together into [an interactive web application](http://airbnb-vs-hotels.mgejdapexj.us-east-1.elasticbeanstalk.com/){:target="_blank"} built with a very simple Flask backend, and a Leaflet and D3 frontend. If you click on a cell, visualizations pop up on the side panel!
+{% include airbnb-hotel-voronoi.html %}
+
+We put all of this together into [an interactive web application](http://airbnb-vs-hotels.mgejdapexj.us-east-1.elasticbeanstalk.com/){:target="_blank"} built with a very simple Flask backend, and a Leaflet and D3 frontend. If you click on a cell, visualizations pop up on the side panel! *See screenshot below.*
+
+![alt text](https://raw.githubusercontent.com/kexin-zhang/kexin-zhang.github.io/master/static/img/screenshot7.PNG "Screenshot of Project")
 
 Want to know more about our project?
 * We tried to organize/document our code on [Github](https://github.com/kexin-zhang/airbnb-vs-hotels){:target="_blank"}.

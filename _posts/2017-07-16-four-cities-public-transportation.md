@@ -4,6 +4,7 @@ layout: d3post
 author: Kexin Zhang
 script: /static/js/publictransport.js
 css: /static/css/publictransportation.css
+additional: /static/js/d3-tip.js
 ---
 *All graphs and maps in this post were created with D3.js!*
 

@@ -33,6 +33,17 @@ var hotel_svg = d3.select("#hotel-map")
 var hotel_g = hotel_svg.append("g")
                        .attr("transform", "translate(" + map_margins.left + "," + map_margins.top + ")");
 
+var voronoi_svg = d3.select("#voronoi")
+                   .append("svg")
+                   .attr("height", "100%")
+                   .attr("width", "100%")
+                   .attr("viewBox", "0 0 " + (map_width + map_margins.left + map_margins.right) + " " + (map_height + map_margins.top + map_margins.bottom))
+                   .attr("preserveAspectRatio", "xMidYMid meet");
+
+
+var voronoi_g = voronoi_svg.append("g")
+                       .attr("transform", "translate(" + map_margins.left + "," + map_margins.top + ")");
+
 var projection = d3.geoAlbers()
                     .scale(scale)
                     .rotate([rotate_x, 0])
@@ -63,14 +74,23 @@ d3.json('/static/js/geojson/nyc.geojson', function(error, data) {
                     .attr("class", "map")
                     .attr('d', path);
 
-    var map = hotel_g.selectAll(".map")
-                    .data(features)
-                    .enter()
-                    .append("path")
-                    .attr("class", "map")
-                    .attr('d', path);
+    var hotel_map = hotel_g.selectAll(".map")
+                            .data(features)
+                            .enter()
+                            .append("path")
+                            .attr("class", "map")
+                            .attr('d', path);
 
     addHotels();
+
+    var v_map = voronoi_g.selectAll(".map")
+                .data(features)
+                .enter()
+                .append("path")
+                .attr("class", "map")
+                .attr('d', path);
+
+    drawVoronoi();
 });
 
 d3.csv('/static/js/data/listings_tagged.csv', function(error, data) {
@@ -264,3 +284,41 @@ function barChart(div, data, title) {
 
 barChart("#airbnb-bar", airbnb_data, "Most Common Airbnb Amenities");
 barChart("#hotel-bar", hotel_data, "Most Common Hotel Amenities");
+
+function drawVoronoi() {
+    d3.csv('/static/js/data/location_cell_centers.csv', function(error, data) {
+        if (error) throw error;
+
+
+        var voronoi = d3.distanceLimitedVoronoi()
+                        .x(function(d) { return d.x; })
+                        .y(function(d) { return d.y; })
+                        .limit(9); 
+
+        data.forEach(function(d) {
+            var point = projection([+d.lon, +d.lat]);
+            d.x = point[0];
+            d.y = point[1];
+        });
+
+        var cells = voronoi(data);
+
+        var points = voronoi_g.selectAll(".points")
+                              .data(cells)
+                              .enter()
+                              .append("g")
+                              .attr("class", "point");
+
+        points.append("path")
+              .attr("d", function(d) { return d.path; })
+              .attr("fill", "none")
+              .attr("stroke", "#225ea8");
+
+        points.append("circle")
+              .attr("cx", function(d) { return d.datum.x; })
+              .attr("cy", function(d) { return d.datum.y; })
+              .attr("r", "1px")
+              .attr("stroke", "none")
+              .attr("fill", "#225ea8");
+    });
+}
