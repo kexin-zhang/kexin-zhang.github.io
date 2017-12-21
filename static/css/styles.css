@@ -317,3 +317,7 @@ ul li {
 .content a {
   color: #9fa8da;
 }
+
+.svg-center {
+  text-align: center;
+}
