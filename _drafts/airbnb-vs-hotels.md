@@ -6,7 +6,7 @@ script: /static/js/airbnb-vs-hotels.js
 css: /static/css/airbnb-vs-hotels.css
 ---
 
-I just finished my fifth (!) semester at Georgia Tech. This past semester, I took [CX 4242/CSE 6242 - Data and Visual Analytics](http://poloclub.gatech.edu/cse6242/2017fall/){:target="_blank"}, which is a essentially a survey of techniques for exploring, analyzing, and visualizing data. Our homeworks covered topics like SQL, D3, Hadoop, Spark, and some machine learning basics. The class also included an open-ended group project, where we were expected to propose a topic and use a "large" dataset, nontrivial analysis, and interactive visualization to address that topic. My group picked comparing the difference in "value" between Airbnbs and hotels, and we focused on New York City. 
+I just finished my fifth (!) semester at Georgia Tech. This semester, I took [CX 4242/CSE 6242 - Data and Visual Analytics](http://poloclub.gatech.edu/cse6242/2017fall/){:target="_blank"}, which is a essentially a survey of techniques for exploring, analyzing, and visualizing data. Our homeworks covered topics like SQL, D3, Hadoop, Spark, and some machine learning basics. The class also included an open-ended group project, where we were expected to propose a topic and use a "large" dataset, nontrivial analysis, and interactive visualization to address that topic. My group picked comparing the difference in "value" between Airbnbs and hotels, and we focused on New York City. 
 
 **What exactly do I mean by value?** Airbnb is often depicted as an "industry disrupter", by facilitating transactions between people who have a empty bed, room, or apartment, and people who are looking for somewhere to stay. For many travelers, this is an attractive alternative to traditional hotel options. There's also an impression that Airbnbs are cheaper than hotels (spoiler alert: in New York City, this is pretty true), but there's a difference between sleeping in someone's spare twin bed compared to staying in a luxury hotel suite. That brings us back to this idea of value. You can get "value" out of your hotel or Airbnb if you're able to save some money by staying there, if the location is ideal, if the service is amazing, or more -- this is pretty subjective and depends on what you're looking for. We chose to focus on a few aspects of short term stays that we felt were particularly important:
 1. Price
@@ -21,6 +21,8 @@ Average price across the Airbnb listings is **$147.67** per night, compared to a
 Location and price by location varies for Airbnbs and hotels. For Airbnbs, I am literally plotting all 440,000 points just to illustrate the sheer number and density of Airbnbs available. In an ideal scenario, I'd do some more preprocessing to cut down the number of points plotted, since this is pretty slow.
 
 {% include airbnb-hotel-maps.html %}
+
+{% include airbnb-hotel-bargraph.html %}
 
 Looking at the city as a whole isn't particularly helpful for people actually looking for somewhere to stay when visiting New York City. We wanted more detailed comparisons, but **which Airbnbs do we compare to which hotels?**
 

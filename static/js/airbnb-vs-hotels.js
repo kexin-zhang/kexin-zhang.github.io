@@ -173,3 +173,94 @@ function addLegend(scale, g) {
           .attr("text-anchor", "start")
           .style("font-size", "9px");
 }
+
+var airbnb_data = [{'count': 42850, 'name': 'Wireless Internet'},
+ {'count': 41107, 'name': 'Kitchen'},
+ {'count': 40454, 'name': 'Heating'},
+ {'count': 37721, 'name': 'Essentials'},
+ {'count': 37145, 'name': 'Air conditioning'},
+ {'count': 35259, 'name': 'Smoke detector'},
+ {'count': 28369, 'name': 'TV'},
+ {'count': 27652, 'name': 'Hangers'},
+ {'count': 26648, 'name': 'Carbon monoxide detector'},
+ {'count': 26060, 'name': 'Shampoo'},
+ {'count': 23969, 'name': 'Laptop friendly workspace'},
+ {'count': 23928, 'name': 'Internet'},
+ {'count': 23825, 'name': 'Hair dryer'},
+ {'count': 22700, 'name': 'Iron'},
+ {'count': 18522, 'name': 'Family/kid friendly'}];
+
+ var hotel_data = [{'count': 217, 'name': 'Air Conditioning'},
+ {'count': 217, 'name': 'Free High Speed Internet ( WiFi )'},
+ {'count': 201, 'name': 'Multilingual Staff'},
+ {'count': 194, 'name': 'Laundry Service'},
+ {'count': 178, 'name': 'Fitness Center with Gym / Workout Room'},
+ {'count': 175, 'name': 'Dry Cleaning'},
+ {'count': 160, 'name': 'Business Center with Internet Access'},
+ {'count': 150, 'name': 'Concierge'},
+ {'count': 146, 'name': 'Bar/Lounge'},
+ {'count': 133, 'name': 'Meeting Rooms'},
+ {'count': 130, 'name': 'Restaurant'},
+ {'count': 111, 'name': 'Room Service'},
+ {'count': 100, 'name': 'Breakfast included'},
+ {'count': 70, 'name': 'Refrigerator in room'},
+ {'count': 68, 'name': 'Conference Facilities'}]
+
+
+function barChart(div, data, title) {
+     var margin = {
+        top: 40,
+        left: 200, 
+        bottom: 30,
+        right: 20
+     };
+
+     var width = 960 - margin.left - margin.right;
+     var height = 350 - margin.bottom - margin.top;
+
+    var svg = d3.select(div)
+                .append("svg")
+                .attr("height", "100%")
+                .attr("width", "100%")
+                .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
+                .attr("preserveAspectRatio", "xMidYMid meet");
+
+
+    var g = svg.append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var x = d3.scaleLinear()
+              .range([0, width])
+              .domain([0, d3.max(data, function(d) { return d.count; })]);
+
+    var y = d3.scaleBand()
+              .rangeRound([0, height])
+              .domain(data.map(function(d) { return d.name; }))
+              .padding(0.1);
+
+    var bars = g.selectAll("rect")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("x", 0)
+                .attr("y", function(d) { return y(d.name); })
+                .attr("width", function(d) { return x(d.count); })
+                .attr("height", y.bandwidth())
+                .style("fill", "#225ea8");
+
+    g.append("g")
+       .attr("transform", "translate(0," + height + ")")
+       .call(d3.axisBottom(x));
+
+    g.append("g")
+     .call(d3.axisLeft(y));
+
+    g.append("text")
+     .text(title)
+     .attr("x", (width)/2)
+     .attr("y", 0 - (margin.top / 2))
+     .style("text-anchor", "middle");
+}
+
+barChart("#airbnb-bar", airbnb_data, "Most Common Airbnb Amenities");
+barChart("#hotel-bar", hotel_data, "Most Common Hotel Amenities");
