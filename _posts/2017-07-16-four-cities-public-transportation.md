@@ -21,7 +21,11 @@ To give this post some context, let's first take a look at the cities themselves
 
 Although public transit systems are generally concentrated within the city's center, most also extend outside of city boundaries. Boston's subway system has stops in Cambridge, Somerville, Brookline, and Medford, while the BART provides transportation throughout the Bay Area, not just within San Francisco's boundaries. We can consider public transportation systems in the context of the city as well as the metropolitan area.
 
-{% include population.html %}
+<div id="population" class="graph"></div>
+<div class="columns" id="graph-row">
+    <div id="area"></div>
+    <div id="density"></div>
+</div>
 
 *Source: US Census 2015 American Community Survey. I used [Census Reporter](https://censusreporter.org/){:target="_blank"} to obtain these figures.*
 
