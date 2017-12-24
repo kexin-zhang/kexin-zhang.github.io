@@ -34,13 +34,21 @@ Planning public transporation in a large, sprawling city such as Atlanta inevita
 
 **What do the subway systems in these cities actually look like?** I've plotted subway lines and stations in each city. In Boston, I also included the silver line, which is technically a bus, but the MBTA includes the silver line in its rail maps. Also, note that each map is at a different scale, so that we can more clearly see the details of the subway systems. 
 
-{% include maps.html %}
+<div id="maps-container">
+  <div id="boston" class="city-map"></div>
+  <div id="sf" class="city-map"></div>
+  <div id="atl" class="city-map"></div>
+  <div id="nyc" class="city-map"></div>
+</div>
 
 The obvious takeaway here is how extensive the New York City subway system is. Boston's MBTA is also comparatively expansive within the city of Boston and its surrounding neighborhoods. This is likely facillitated by Boston's small land area and New York's high population density. It should also be noted that public transportation systems were established much earlier in these cities. The first subway lines opened in 1897 in Boston and in 1904 in New York, compared to 1972 for San Francisco and 1979 for Atlanta. Both the BART and MARTA have much fewer stops, and there are lines in only a few directions. However, while the BART goes through much of the Bay Area, MARTA barely covers three counties and isn't in most metropolitan Atlanta counties.
 
 What about the people in these cities? **How do the residents in each city travel?** How many drive cars? How many of them rely on public transportation? A couple of notes here: data for annual ridership is for heavy rail systems. This does not include buses or light rail systems, such as Boston's green line. Additionally, the means of transportation data is for the city, not the metropolitan area, and it only takes into account how workers, ages 16 and over, commute to work. Thus, the graph does not reflect how people travel for leisure. For example, I usually take the T during the week to work, but I typically walk to places on weekends. Nonetheless, the methods that people use to commute to work provides a good overall look into what systems of transportation residents depend on.
 
-{% include people.html %}
+<div id="ridership" class="graph"></div>
+<div id="percent-subway-title"></div>
+<div id="percent-subway"></div>
+<div id ="percent-subway-legend"></div>
 
 *Source (top): The [American Public Transportation Association](http://www.apta.com/resources/statistics/Pages/ridershipreport.aspx){:target="_blank"}'s annual ridership report .Source (bottom): 2015 US Census American Community Survey, obtained with [Census Reporter](https://censusreporter.org/){:target="_blank"}.*
 

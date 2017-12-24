@@ -23,14 +23,16 @@ Average price across the Airbnb listings is **$147.67** per night, compared to a
 
 Location and price by location varies for Airbnbs and hotels. For Airbnbs, I used a latitude longitude grid to reduce the number of points to plot. The Airbnb plot below shows mean price in each Airbnb grid, while the hotel plot displays average room price per hotel. It should be noted that the color scales are different for both plots.
 
-{% include airbnb-hotel-maps.html %}
+<div id="airbnb-map" class="svg-center"></div>
+<div id="hotel-map" class="svg-center"></div>
 
 It's obvious that hotels are much more sparse (and expensive) than Airbnbs. Because Airbnb listings are usually just homes that aren't subject to the same zoning laws as hotels, it makes a lot of sense that Airbnbs cover a larger geographic area than hotels. Additionally, it's a little difficult to compare the geography of Airbnbs to that of hotels since Airbnbs are usually rooms, while hotels are buildings with lots of rooms. Despite that, even though Airbnb listings cover a large portion of the city, past work suggests that [demand is only routinely high for Airbnb listings in touristic areas near the city center](https://arxiv.org/pdf/1602.02238.pdf){:target="_blank"}. This is also where hotels are typically located. In this case, for New York, Manhattan (1) is a popular tourist destination, (2) has a high cost of living, (3) has the highest density of Airbnbs and hotels, and (4) is home to the most expensive Airbnbs and hotels. In general, expensive hotels are located around the same areas as expensive Airbnbs (around Central Park and in lower Manhattan), but there are also some less expensive hotels in these areas with expensive Airbnbs. 
 
 #### Amenities and Reviews
 Airbnbs, on average, are cheaper than hotels in New York City. While both provide people with a place to stay overnight, they are very different experiences.
 
-{% include airbnb-hotel-bargraph.html %}
+<div id="airbnb-bar" class="svg-center"></div>
+<div id="hotel-bar" class="svg-center"></div>
 
 Hotels definitely offer more luxurious services and facilities, such as laundry service, gyms, and free breakfast, while many popular Airbnb amenities are simply standard items in hotel rooms, like smoke detectors, shampoo, TV, and hangers. One notable exception is a kitchen, which is a common amenity for Airbnbs, but something that almost all hotel rooms lack. It could have been interesting here to experiment with factoring in the amenties when comparing price -- when accounting for the cost of breakfast, dry cleaning, gym access, etc., which are free at hotels but not at Airbnbs, what is the difference in price between staying at an Airbnb and staying at a hotel?
 
@@ -44,7 +46,7 @@ After experimenting with several ideas, we settled on an approach using K-Means.
 
 We displayed these clusters through a voronoi diagram; the clusters and their centers are shown below. We limited the size of the cells to a radius of 1km, so Airbnbs further than 1km away from a cluster center (36% of our listings) were not included. 
 
-{% include airbnb-hotel-voronoi.html %}
+<div id="voronoi" class="svg-center"></div>
 
 We put all of this together into [an interactive web application](http://airbnb-vs-hotels.mgejdapexj.us-east-1.elasticbeanstalk.com/){:target="_blank"} built with a very simple Flask backend, and a Leaflet and D3 frontend. The voronoi diagram became a choropleth voronoi map, with price difference between hotels and Airbnbs as the scale. If you click on a cell, additional visualizations pop up on the side panel! *See screenshot below.*
 

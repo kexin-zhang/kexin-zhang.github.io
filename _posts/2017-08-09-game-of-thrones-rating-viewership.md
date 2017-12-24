@@ -11,7 +11,8 @@ _**This post contains Game of Thrones spoilers up to and including Season 7 Epis
 
 I'm a huge Game of Thrones fan. I've read all the books and watched all episodes of the TV show. The episode that aired last Sunday, "The Spoils of War", was the most watched episode of Game of Thrones ever, even though the episode was leaked a few days before it aired. It's also one of the highest rated episodes of the series, with a user IMDB rating of 9.9. That sparked my interest in the ratings and number of viewers of the seven seasons of Game of Thrones.
 
-{% include got-ratings.html %}
+<div id="got-ratings"></div>
+<div id="got-ratings-detailed"></div>
 
 *Viewership is the number of US viewers in millions from [Nielsen Media (as displayed on Wikipedia)](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes){:target="_blank"}. Ratings are average user ratings on [IMDB](http://www.imdb.com/title/tt0944947/eprate){:target="_blank"}* 
 
@@ -23,7 +24,8 @@ There are also a few interesting takeaways from the more detailed ratings graph.
 
 One of the distinctive qualities of the show is how ruthless it can be - important characters get killed, often in brutal ways. How often do characters die and do those deaths correlate to higher ratings?
 
-{% include got-deaths.html %}
+<div id="deaths-bar"></div>
+<div id="deaths-ratings"></div>
 
 *Deaths were counted from this [Game of Thrones Deaths Timeline](https://deathtimeline.com/){:target="_blank"}.*
 
@@ -37,7 +39,7 @@ Furthermore, maybe the deaths of minor characters don't mean as much to me becau
 
 Let's wrap this all up by looking at average episode viewership, user rating, and death count on an aggregate level.
 
-{% include got-combined.html %}
+<div id="got-combined"></div>
 
 This chart confirms some of the earlier observations. Notably, viewership grows steadily from seasons one to four and then is more stagnant for seasons five and six. Season five's relatively low average rating and inconsistency between episodes likely contributed to this. It should also be noted that the potential audience for the show is finite and it's impossible for the number of Game of Thrones viewers to continuously grow at the same rate. That being said, it's impressive that the show's audience has yet to peak.
 
