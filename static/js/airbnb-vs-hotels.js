@@ -74,6 +74,8 @@ d3.json('/static/js/geojson/nyc.geojson', function(error, data) {
                     .attr("class", "map")
                     .attr('d', path);
 
+    addAirbnb();
+
     var hotel_map = hotel_g.selectAll(".map")
                             .data(features)
                             .enter()
@@ -93,32 +95,33 @@ d3.json('/static/js/geojson/nyc.geojson', function(error, data) {
     drawVoronoi();
 });
 
-d3.csv('/static/js/data/listings_tagged.csv', function(error, data) {
-    if (error) { console.log(error); throw error; }
+function addAirbnb() {
+    d3.csv('/static/js/data/listings.csv', function(error, data) {
+        if (error) { console.log(error); throw error; }
 
-    data.forEach(function(d) {
-        d.price = +d.price;
-        d.lat = +d.latitude;
-        d.lon = +d.longitude;
+        data.forEach(function(d) {
+            d.price = +d.price;
+            d.lat = +d.latitude;
+            d.lon = +d.longitude;
+        });
+
+        scale.domain(data.map(function(d) { return d.price; }));
+
+        addLegend(scale, airbnb_g);
+
+        airbnb_g.selectAll(".airbnbs")
+              .data(data)
+              .enter()
+              .append("circle")
+              .attr("class", "airbnbs")
+              .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
+              .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
+              .attr("fill", function(d) { return scale(d.price); })
+              .attr("stroke", "none")
+              .attr("r", "1px")
+              .style("opacity", .6);
     });
-
-    scale.domain(data.map(function(d) { return d.price; }));
-
-    addLegend(scale, airbnb_g);
-
-    airbnb_g.selectAll(".airbnbs")
-          .data(data)
-          .enter()
-          .append("circle")
-          .attr("class", "airbnbs")
-          .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
-          .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
-          .attr("fill", function(d) { return scale(d.price); })
-          .attr("stroke", "none")
-          .attr("r", "1px")
-          .style("opacity", .6);
-});
-
+}
 
 function addHotels() {
     d3.csv('/static/js/data/hotels.csv', function(error, data) {
@@ -270,7 +273,9 @@ function barChart(div, data, title) {
 
     g.append("g")
        .attr("transform", "translate(0," + height + ")")
-       .call(d3.axisBottom(x));
+       .call(d3.axisBottom(x))
+       .append("text")
+       .ca;
 
     g.append("g")
      .call(d3.axisLeft(y));
@@ -280,6 +285,7 @@ function barChart(div, data, title) {
      .attr("x", (width)/2)
      .attr("y", 0 - (margin.top / 2))
      .style("text-anchor", "middle");
+
 }
 
 barChart("#airbnb-bar", airbnb_data, "Most Common Airbnb Amenities");
