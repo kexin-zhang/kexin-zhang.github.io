@@ -4,6 +4,7 @@ html {
 
 body {
   min-height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 html, body {
@@ -58,11 +59,11 @@ html, body {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 ol li, ul li {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 @media only screen and (max-width: 767px) {
@@ -80,7 +81,7 @@ ol li, ul li {
   }
 
   #intro-wrapper p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   #icons i {
@@ -307,11 +308,11 @@ ul li {
 }
 
 .navbar .navbar-brand {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 .navbar-section a {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .content a {
