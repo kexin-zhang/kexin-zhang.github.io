@@ -70,6 +70,10 @@ ul li ul li {
   font-size: 1em;
 }
 
+li {
+  list-style-position: outside;
+}
+
 @media only screen and (max-width: 767px) {
   .columns-main {
     width: 95% !important;
