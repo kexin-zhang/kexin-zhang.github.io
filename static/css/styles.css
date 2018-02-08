@@ -12,6 +12,10 @@ html, body {
   padding: 0;
 }
 
+.section-header {
+  padding: 2rem !important;
+}
+
 .main, .main-home {
   min-height: 100vh;
   flex-direction: column;
