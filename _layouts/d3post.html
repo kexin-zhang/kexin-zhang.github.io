@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-	{% include head.html %}
+    {% include head.html %}
 
-	<body>
-		<div class="main">
-			{% include nav.html %}
-			<div class="columns-main">
-				<div class="post-container">
-					<div class="title">
-						<h3>{{ page.title }}</h3>
-						<h5>{{ page.date | date_to_string }} - {{ page.author }}</h5>
-					</div>
-					<div class="post-content">
-						{{ page.content }}
-					</div>
-				</div>
-			</div>
-			{% include footer.html %}
-		</div>
-		<script src="https://use.fontawesome.com/d2c891c2de.js"></script>
-		<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <body>
+        <div class="container">
+            {% include nav.html %}
+            <div class="post-title">
+                <h3>{{ page.title }}</h3>
+                <h6>{{ page.date | date_to_string }} - {{ page.author }}</h6>
+            </div>
+            <div class="post-content">
+                {{ page.content }}
+            </div>
+        </div>
+        <script src="https://use.fontawesome.com/d2c891c2de.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
         {% if page.additional %}
             <script src="{{ page.additional }}"></script>
         {% endif %}
-		{% if page.script %}
-			<script src="{{ page.script }}"></script>
-		{% endif %}
-	</body>
+        {% if page.script %}
+            <script src="{{ page.script }}"></script>
+        {% endif %}
+    </body>
 </html>

@@ -20,4 +20,22 @@ permalink: /
     {% endfor %}
 
     <div class="border-line"></div>
+
+    <div class="row">
+        <div class="six columns">
+            <h5>What I've been up to</h5>
+
+            <ul class="blog-posts">
+                {% for post in site.posts limit:5 %}
+                    <li><a href='{{ post.url }}'>{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </div>
+
+        <div class="six columns">
+            <h5>What I'm listening to</h5>
+        </div>
+    </div>
+
 </section>
