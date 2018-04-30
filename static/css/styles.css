@@ -10,6 +10,14 @@ footer {
     text-align: center;
 }
 
+a {
+    color: #16A085;
+}
+
+a:hover {
+    color: #2ABB9B;
+}
+
 .navbar {
     display: block;
     width: 100%;
