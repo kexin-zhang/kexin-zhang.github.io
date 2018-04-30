@@ -73,7 +73,7 @@ a:hover {
     margin-right: 0;
 }
 
-ul.blog-posts {
+ul.blog-posts, ul.songs {
     list-style: none;
 }
 

@@ -35,6 +35,12 @@ permalink: /
 
         <div class="six columns">
             <h5>What I'm listening to</h5>
+
+            <ul class="songs">
+                {% for song in site.data.songs limit:5 %}
+                    <li><a href="{{ song.link }}" target="_blank">{{ song.title }} - {{ song.artist }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 

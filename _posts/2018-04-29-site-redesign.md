@@ -15,3 +15,5 @@ Jekyll has some built-in themes that you can choose from, or you can create your
 * Font color: #2d3436
 * Link color: <span style="color:#16A085">#16A085</span>
 * Link hover color: <span style="color: #2ABB9B">#2ABB9B</span>
+
+As for next steps, I'm planning on writing a small script to pull songs from a Spotify playlist to populate the "What I'm listening to" section on the home page, (hopefully) writing some more blog posts in a week or two, and adding pagination to the blog page. 
