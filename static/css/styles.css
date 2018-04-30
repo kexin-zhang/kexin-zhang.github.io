@@ -107,11 +107,23 @@ table {
 }
 
 .post-link {
-    font-size: 1.1em;
+    font-size: 1.2em;
+}
+
+.post-link a {
+    text-decoration: none;
 }
 
 footer a {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
+}
+
+.project {
+    margin-top: 3em;
+}
+
+.project img {
+    width: 100%;
 }

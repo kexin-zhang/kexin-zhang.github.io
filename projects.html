@@ -1,42 +1,21 @@
 ---
 title: Projects
-layout: base
+layout: home
 permalink: /projects
 ---
 
-<div id="projects">
-	<div class="title">
-		<h5>Hover over a project for more details.</h5>
-	</div>
-	<div id="images-container">
-		{% assign sorted = (site.projects | sort: 'date') | reverse %}
-		{% for project in sorted %}
-		<div class="wrap">
-			<img src="{{ project.image }}"/>
-			<div class="content" style="display:none;">
-				<h4>{{ project.title }}</h4>
+<section id="projects">
+	{% assign sorted = (site.projects | sort:'date') | reverse %}
+	{% for project in sorted %}
+		<div class="project row">
+			<div class="seven columns">
+				<img src="{{project.image}}" alt="{{project.title}}">
+			</div>
+			<div class="five columns">
+				<h5>{{ project.title}}</h5>
 				{{ project.content }}
-				<a class="btn" href="{{ project.github }}" target="_blank">Github</a>
+				<a class="button" href="{{ project.github }}" target="_blank">Github</a>
 			</div>
 		</div>
-		{% endfor %}
-	</div>
-</div>
-<script src="/static/js/jquery-3.2.1.slim.min.js"></script>
-<script>
-	$(document).ready(function() {
-
-		$(".wrap img").hover(function(){
-	      $(this).next('.content').show();
-	    },function(){
-	      $(this).next('.content').hide();
-	    });
-
-	    $('.wrap .content').hover(function(){
-	        $(this).show();
-	    }, function(){
-	        $(this).hide();
-	    });
-
-	})
-</script>
+	{% endfor %}
+</section>
