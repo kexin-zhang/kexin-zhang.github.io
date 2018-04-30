@@ -5,7 +5,7 @@ permalink: /projects
 ---
 
 <section id="projects">
-	{% assign sorted = (site.projects | sort:'date') | reverse %}
+	{% assign sorted = site.projects | sort:'date' | reverse %}
 	{% for project in sorted %}
 		<div class="project row">
 			<div class="seven columns">
