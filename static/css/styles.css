@@ -2,6 +2,14 @@ body {
     color: #2d3436;
 }
 
+section {
+    padding-bottom: 5em;
+}
+
+footer {
+    text-align: center;
+}
+
 .navbar {
     display: block;
     width: 100%;
@@ -76,4 +84,26 @@ ul.blog-posts {
 
 table {
     width: 100%;
+}
+
+.post {
+    margin-top: 2em;
+}
+
+.post p {
+    margin-bottom: 0;
+}
+
+.post .date {
+    color: #b0bec5;
+}
+
+.post-link {
+    font-size: 1.1em;
+}
+
+footer a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
 }
