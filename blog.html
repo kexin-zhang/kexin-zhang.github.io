@@ -5,7 +5,6 @@ permalink: /blog
 ---
 
 <section id="blog">
-	<div class="container">
 	{% for post in site.posts %}
 		<div class="post">
 			<p class="post-link"><a href='{{ post.url }}'>{{ post.title }}</a></p>
@@ -13,5 +12,4 @@ permalink: /blog
 			<p>{{ post.excerpt | strip_html | truncatewords:50 }} <a href="{{ post.url }}">Read more</a></p>
 		</div>
 	{% endfor %}
-	</div>
 </section>

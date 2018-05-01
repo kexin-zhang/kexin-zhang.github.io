@@ -1,11 +1,11 @@
 ---
-title: Some Insight into Expectation Maximization
+title: Some Quick Insight into Expectation Maximization
 layout: d3post
 author: Kexin Zhang
 math: include
 ---
 
-This semester, I took computational statistics (ISYE 6416) and machine learning (CS 4641). I've been studying for the finals, both of which cover expectation maximization (EM), and initially struggled with connecting the concepts learned in both classes. This post is more for me to conceptualize EM from both a more theoretical/algorithmic standpoint and as an applied strategy. 
+This semester, I took computational statistics (ISYE 6416) and machine learning (CS 4641). I've been attempting to study for the finals, both of which cover expectation maximization (EM), and initially struggled with connecting the concepts learned in the two classes. This post is more for me to conceptualize EM from a more theoretical/algorithmic standpoint and as an applied strategy. 
 
 #### Foundation
 EM builds off of [Maximization Likelihood Estimation (MLE)](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation){:target="blank"}, which is a method for approximating distribution parameters given some observations. The maximum likelihood estimator is the parameter that maximizes the likelihood of having such data observations.
@@ -55,6 +55,8 @@ Since we have observed X, Z is the only random portion of Y.
 {:start="2"}
 2. **M step**: Maximize $$Q(\theta \vert \theta^{(t)})$$ with respect to $$\theta$$. Set $$\theta^{(t+1)}$$ to this maximizer, and go back to the E step unless some stopping or convergence criteria has been met. 
 
+The log likelihood is monotonically non-decreasing with subsequent iterations of EM.
+
 ##### Toy Example
 The Givens and Hoeting textbook contains a toy example that illustrates the idea pretty well. In the example, there are two variables, $$Y_1$$ and $$Y_2$$, which are independantly and identically distributed -- $$Y_1,\; Y_2 \sim Exp(\theta)$$. $$y_1$$ is 5, but $$y_2$$ is missing. 
 
@@ -102,10 +104,10 @@ $$
 Thus, $$\theta^{(t+1)} = \frac{2\theta^{(t)}}{5\theta^{(t)} + 1}$$.
 
 #### Clustering with EM
-A common machine learning problem involves assigning data to clusters. EM is generally used in this context when we assume that our data comes from a Gaussian mixture model. Here, each Gaussian component represents a cluster, and each point gets assigned some probability of belonging to each cluster. This is also called soft clustering, as opposed to hard clustering, in which each point is explicitly assigned some cluster.
+A common machine learning problem involves assigning data to clusters. EM is generally used in this context when we assume that our data corresponds to a Gaussian mixture model. Here, each Gaussian component represents a cluster, and each point gets assigned some probability of belonging to each cluster. This is also called soft clustering, as opposed to hard clustering, in which each point is explicitly assigned some cluster.
 
 ##### Gaussian Mixture Models
-A mixture model consists of $$n$$ distributions, each with a weight. All weights sum to 1. In a Gaussian mixture model, each of the component distributions is a normal distribution. You may see mixture models written like this: 
+A mixture model consists of $$n$$ distributions, each with a weight. All weights sum to 1. In a Gaussian mixture model, each of the component distributions is a normal distribution. For example, you may see mixture models written like this: 
 
 $$
     0.7N(7, 0.5^2) + 0.3N(10, 0.5^2)
@@ -113,7 +115,18 @@ $$
 
 This would imply that roughly 70 percent of observations are from the first distribution and 30 percent of observations are from the second one.
 
+More generally, a Gaussian mixture model can be expressed as:
+
+$$
+    \sum\limits_{k} \lambda_k N(\mu_k, \sigma_k^2)
+$$
+
+where $$\lambda_k's$$ are the weights and $$\sum\limits_k \lambda_k = 1$$.
+
 For clustering purposes, the parameters to estimate are the mean and standard deviations of each Gaussian component, and the hidden variables are which Gaussian component each point corresponds to. 
 
-##### Toy Example 2
-Honestly, I just really wanted to write some D3. 
+#### References/Other
+* I learned about EM from [Computational Statisics by Givens and Hoeting](http://www.stat.colostate.edu/computationalstatistics/){:target="blank"} and the [Georgia Tech Udacity ML course](https://www.youtube.com/watch?v=6OwQ9C2aZI8&index=52&list=PLAwxTw4SYaPmaHhu-Lz3mhLSj-YH-JnG7){:target="blank"}.
+* You can write latex in markdown! I use [kramdown](https://kramdown.gettalong.org/), which is Jekyll's default markdown converter. 
+* Maybe at some point I'll throw in a clustering example.
+* There are variations of EM, like Graident EM, 
