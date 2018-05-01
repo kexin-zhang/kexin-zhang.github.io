@@ -129,4 +129,3 @@ For clustering purposes, the parameters to estimate are the mean and standard de
 * I learned about EM from [Computational Statisics by Givens and Hoeting](http://www.stat.colostate.edu/computationalstatistics/){:target="blank"} and the [Georgia Tech Udacity ML course](https://www.youtube.com/watch?v=6OwQ9C2aZI8&index=52&list=PLAwxTw4SYaPmaHhu-Lz3mhLSj-YH-JnG7){:target="blank"}.
 * You can write latex in markdown! I use [kramdown](https://kramdown.gettalong.org/), which is Jekyll's default markdown converter. 
 * Maybe at some point I'll throw in a clustering example.
-* There are variations of EM, like Graident EM, 
