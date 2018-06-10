@@ -128,3 +128,7 @@ footer a {
 .project img {
     width: 100%;
 }
+
+#projects p {
+    margin-top: 2em;
+}

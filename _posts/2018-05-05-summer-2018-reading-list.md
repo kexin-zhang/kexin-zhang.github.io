@@ -11,7 +11,7 @@ Here's my summer reading list:
 2. The Trial - Franz Kafka
 3. The Book of Laughter and Forgetting - Milan Kundera
 4. The Five Dysfunctions of a Team - Patrick Lencioni
-5. Intercourse - Andrew Dworkin
+5. Intercourse - Andrea Dworkin
 6. In Cold Blood - Truman Capote
 
 I will (hopefully) be adding to this post with updates throughout the summer.
