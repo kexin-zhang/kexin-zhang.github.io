@@ -6,9 +6,9 @@ script: /static/js/gmaps2geojson.js
 css: /static/css/gmaps2geojson.css
 ---
 
-*TLDR: I wrote 30 lines of code for getting GeoJSON from Google Maps directions and wrote this blog post to hype myself up. See the [Github repo](https://github.com/kexin-zhang/gmaps2geojson).*
+*TLDR: I wrote 40 lines of code for getting GeoJSON from Google Maps directions and wrote this blog post to hype myself up. See the [Github repo](https://github.com/kexin-zhang/gmaps2geojson).*
 
-I was recently inspired by this [blog post](https://chriswhong.com/data-visualization/taxitechblog1/) on the technical details behind [NYC Taxis: A Day in the Life](http://chriswhong.github.io/nyctaxi/). Part of the post details how Chris Whong used Google Maps to fetch route coordinates, so I wrote this super simple Python utility for converting routes to GeoJSON. Since GeoJSON is often used for mapping with JavaScript, I thought it'd be helpful to have some code for generating GeoJSON -- which I've called **gmaps2geojson**.
+I was recently inspired by this [blog post](https://chriswhong.com/data-visualization/taxitechblog1/) on the technical details behind [NYC Taxis: A Day in the Life](http://chriswhong.github.io/nyctaxi/). Part of the post details how Chris Whong used Google Maps to fetch route coordinates, so I wrote this super simple Python utility for converting routes to GeoJSON. Since GeoJSON is often used for mapping with JavaScript, I thought it'd be helpful to have some code for generating GeoJSON files -- which I've called **gmaps2geojson**.
 
 #### Usage Example
 Over spring break, I did a road trip: Atlanta -> New Orleans -> Baton Rouge -> Houston -> College Station -> Austin. New Orleans, Houston, and Austin were the main destinations, and Baton Route and College Station were pit stops along the way.
@@ -17,7 +17,7 @@ Our route looked something like this:
 
 <div id="map"></div>
 
-The Python stuff I wrote is a class called `Writer` with two methods: `query` (for searching for a route given a source and destination) and `save` (for writing the queried routes to GeoJSON format). To get the driving routes for the spring break trip, I can do this:
+The Python code I wrote is a class called `Writer` with two methods: `query` (for searching for a route given a source and destination) and `save` (for writing the queried routes to GeoJSON format). So, I was able to easily create a GeoJSON file with the driving route coordinates from the spring break roadtrip:
 ```
 import gmaps2geojson
 
@@ -47,10 +47,10 @@ d3.json("roadtrip.geojson", function(error, data) {
 });
 ```
 
-See the full source code for defining the map projection and path as well as plotting the base US map.
+See the [full source code](https://github.com/kexin-zhang/kexin-zhang.github.io/blob/master/static/js/gmaps2geojson.js) for defining the map projection and path as well as plotting the base US map.
 
 #### How it works
-gmaps2geojson starts by making a call to the Google Maps API. The Google Maps API can be directly queried with this URL:
+[gmaps2geojson](https://github.com/kexin-zhang/gmaps2geojson/blob/master/gmaps2geojson/writer.py) starts by making a call to the Google Maps API. The Google Maps API can be directly queried with this URL:
 ```
 https://maps.googleapis.com/maps/api/directions/json?origin="<source>"&destination="<dest>"
 ```
@@ -164,7 +164,7 @@ returns the following response JSON:
 
 This works even if you're querying without an API key, but if you're going to be querying for a lot of routes, you should probably add down time in between queries so that Google doesn't get mad at you.
 
-The important part of the response is the **overview_polyline** field, which is Google's compressed representation of the route. The polyline can be decoded into lat-lon coordinates using Python's [polyline package](https://pypi.org/project/polyline/). For specifics behind decoding polyline, check out the [Mapbox implementation](https://github.com/mapbox/polyline).
+The important part of the response is the **overview_polyline** field, which is Google's compressed representation of the route. This polyline can be decoded into lat-lon coordinates using Python's [polyline package](https://pypi.org/project/polyline/). For specifics behind decoding polyline, check out the [Mapbox implementation](https://github.com/mapbox/polyline).
 
 With the decoded lat-lon coordinates, we can format the paths as MultiLineString features to comply with the [GeoJSON specs](https://tools.ietf.org/html/rfc7946). The biggest thing here is that the decoded coordinates are in the form of (lat, lon), but for GeoJSON, the coordinates need to be formatted as (lon, lat), so we have to switch the ordering of the points.
 
@@ -198,6 +198,6 @@ Finally, the formatted GeoJSON looks like this:
 }
 ```
 
-#### Extra Reading:
+#### Other:
 * If you want lots of details about GeoJSON, there's a really good [blog post](https://macwright.org/2015/03/23/geojson-second-bite.html).
-* The example map in this post was created with D3 v4. This [page](http://duspviz.mit.edu/d3-workshop/mapping-data-with-d3/) has a good primer on basics of maps with D3.
+* The example map in this post was created with D3 v4. This [page](http://duspviz.mit.edu/d3-workshop/mapping-data-with-d3/) has a good overview of mapping with D3.

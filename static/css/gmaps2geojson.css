@@ -8,3 +8,14 @@
   fill: none;
   stroke-width: 2px;
 }
+
+.city {
+  fill: #6c5ce7;
+  opacity: 0.5;
+}
+
+text {
+  font: 9px sans-serif;
+  fill: #636e72;
+  letter-spacing: 1px;
+}
