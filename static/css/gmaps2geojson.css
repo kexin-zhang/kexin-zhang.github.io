@@ -1,0 +1,10 @@
+.base {
+  fill: #dfe6e9;
+  stroke: #fff;
+}
+
+.routes {
+  stroke: #6c5ce7;
+  fill: none;
+  stroke-width: 2px;
+}
