@@ -40,6 +40,8 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
 
   var driveCoordinates = data.features.filter(function(d) { return d.properties.name === "drive"; });
   var hikeCoordinates = data.features.filter(function(d) { return d.properties.name === "hike"; });
+  var driveToLakeCoordinates = data.features.filter(function(d) { return d.properties.name === "lake-drive"; });
+  var raftCoordinates = data.features.filter(function(d) { return d.properties.name === "raft"; });
 
   function plotDrive() {
     var drive = g.selectAll(".drive")
@@ -61,6 +63,26 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
                   .call(transition_hike);
   }
 
+  function plotDriveToLake() {
+      var driveToLake = g.selectAll(".lake-drive")
+                         .data(driveToLakeCoordinates)
+                         .enter()
+                         .append("path")
+                         .attr("class", "drive")
+                         .attr("d", path)
+                         .call(transition_lake)
+  }
+
+  function plotRaft() {
+    var raft = g.selectAll(".raft")
+                .data(raftCoordinates)
+                .enter()
+                .append("path")
+                .attr("class", "raft")
+                .attr("d", path)
+                .call(transition_raft);
+  }
+
   function transition(path) {
      path.transition()
          .duration(9500)
@@ -69,6 +91,20 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
    }
 
    function transition_hike(path) {
+     path.transition()
+         .duration(6500)
+         .attrTween("stroke-dasharray", tweenDash)
+         .on("end", plotDriveToLake);
+   }
+
+   function transition_hike(path) {
+     path.transition()
+         .duration(4500)
+         .attrTween("stroke-dasharray", tweenDash)
+         .on("end", plotRaft);
+   }
+
+   function transition_raft(path) {
      path.transition()
          .duration(6500)
          .attrTween("stroke-dasharray", tweenDash);

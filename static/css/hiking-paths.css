@@ -3,14 +3,19 @@
   height: 550px;
 }
 
-.drive {
+path {
   fill: none;
-  stroke: #000;
   stroke-width: 2px;
 }
 
+.drive {
+  stroke: #000;
+}
+
 .hike {
-  fill: none;
   stroke: #27ae60;
-  stroke-width: 2px;
+}
+
+.raft {
+  stroke: #2980b9;
 }
