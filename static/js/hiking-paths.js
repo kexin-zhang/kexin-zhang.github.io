@@ -114,7 +114,7 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
    // 47.50212,-123.31785
    function zoomStaircase() {
        d3.selectAll(".drive").remove();
-       map.flyTo([47.50212,-123.31785], 13);
+       map.flyTo([47.511221, -123.323443], 14);
    }
 
    function zoomReset() {
@@ -127,7 +127,7 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
    // redraws stuff, used for zooming in/out
    function reset() {
      // i feel like there's a better way to do this but setting drive.attr("d", path) isnt working??
-     if (map.getZoom() == 13) {
+     if (map.getZoom() == 14) {
        g.selectAll(".drive")
                     .data(driveCoordinates)
                     .enter()
