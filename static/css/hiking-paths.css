@@ -8,3 +8,9 @@
   stroke: #000;
   stroke-width: 2px;
 }
+
+.hike {
+  fill: none;
+  stroke: #27ae60;
+  stroke-width: 2px;
+}

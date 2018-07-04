@@ -38,9 +38,12 @@ var transform = d3.geoTransform({point: projectPoint}),
 d3.json("/static/js/geojson/onp.geojson", function(error, data) {
   if (error) throw error;
 
+  var driveCoordinates = data.features.filter(function(d) { return d.properties.name === "drive"; });
+  var hikeCoordinates = data.features.filter(function(d) { return d.properties.name === "hike"; });
+
   function plotDrive() {
     var drive = g.selectAll(".drive")
-                 .data(data.features)
+                 .data(driveCoordinates)
                  .enter()
                  .append("path")
                  .attr("class", "drive")
@@ -48,33 +51,55 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
                  .call(transition);
   }
 
+  function plotHike() {
+      var hike = g.selectAll(".hike")
+                  .data(hikeCoordinates)
+                  .enter()
+                  .append("path")
+                  .attr("class", "hike")
+                  .attr("d", path)
+                  .call(transition_hike);
+  }
+
   function transition(path) {
      path.transition()
-         .duration(5500)
+         .duration(9500)
          .attrTween("stroke-dasharray", tweenDash)
-         .on("end", function() { zoomStaircase(); }); // just gonna chain all the transitions together lol
+         .on("end", zoomStaircase); // just gonna chain all the transitions together lol
+   }
+
+   function transition_hike(path) {
+     path.transition()
+         .duration(6500)
+         .attrTween("stroke-dasharray", tweenDash);
    }
 
    // coordinates for staircase
    // 47.50212,-123.31785
    function zoomStaircase() {
        d3.selectAll(".drive").remove();
-       map.flyTo([47.50212,-123.31785], 11);
+       map.flyTo([47.50212,-123.31785], 13);
+   }
+
+   function zoomReset() {
+     d3.selectAll("path").remove();
+     map.flyTo([47.2995, -122.6207], 9);
    }
 
    map.on("viewreset moveend", reset);
 
    // redraws stuff, used for zooming in/out
    function reset() {
-     console.log("resetting");
      // i feel like there's a better way to do this but setting drive.attr("d", path) isnt working??
-     if (map.getZoom() == 11) {
+     if (map.getZoom() == 13) {
        g.selectAll(".drive")
-                    .data(data.features)
+                    .data(driveCoordinates)
                     .enter()
                     .append("path")
                     .attr("class", "drive")
                     .attr("d", path);
+
+       plotHike();
      } else {
        plotDrive();
      }
