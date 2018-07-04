@@ -1,0 +1,10 @@
+#map {
+  width: 100%;
+  height: 550px;
+}
+
+.drive {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
