@@ -38,11 +38,6 @@ function transformPoint(x, y) {
 var transform = d3.geoTransform({point: projectPoint}),
     path = d3.geoPath().projection(transform);
 
-var line = d3.line()
-             .curve(d3.curveLinear)
-             .x(function(d) { return transformPoint(d[0], d[1]).x; })
-             .y(function(d) { return transformPoint(d[0], d[1]).y; });
-
 var radius = 7;
 
 // i feel like its kinda dumb that everything is in here but idk how to get around it
@@ -126,7 +121,7 @@ d3.json("/static/js/geojson/onp.geojson", function(error, data) {
         .attrTween("stroke-dasharray", function() {
           return function(t) { 
             // for stroke dash array interpolation
-            // https://bl.ocks.org/mbostock/5649592
+          // https://bl.ocks.org/mbostock/5649592
             var l = path.node().getTotalLength(),
                 i = d3.interpolateString("0," + l, l + "," + l);
       

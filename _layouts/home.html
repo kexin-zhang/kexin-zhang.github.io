@@ -12,5 +12,11 @@
 		</div>
 
 		<script src="https://use.fontawesome.com/d2c891c2de.js"></script>
+        {% if page.additional %}
+            <script src="{{ page.additional }}"></script>
+        {% endif %}
+        {% if page.script %}
+            <script src="{{ page.script }}"></script>
+        {% endif %}
 	</body>
 </html>

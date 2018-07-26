@@ -2,6 +2,8 @@
 title: Kexin Zhang
 layout: home
 permalink: /
+additional: /static/js/tabletop.min.js
+script: /static/js/index.js
 ---
 <section id="home">
     <div class="header">
@@ -36,10 +38,7 @@ permalink: /
         <div class="six columns">
             <h5>What I'm listening to</h5>
 
-            <ul class="songs">
-                {% for song in site.data.songs limit:5 %}
-                    <li><a href="{{ song.link }}" target="_blank">{{ song.title }} - {{ song.artist }}</a></li>
-                {% endfor %}
+            <ul class="songs" id="songs">
             </ul>
         </div>
     </div>
