@@ -141,9 +141,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #area, #density {
-    width: 38%;
-  }
 
   #percent-subway-legend {
     width: 600px;
@@ -153,11 +150,5 @@
   #ridership, #population {
     width: 90%;
     margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #area, #density {
-    width: 85%;
   }
 }
