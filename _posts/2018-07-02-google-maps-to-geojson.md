@@ -6,7 +6,7 @@ script: /static/js/gmaps2geojson.js
 css: /static/css/gmaps2geojson.css
 ---
 
-*TLDR: I wrote 40 lines of code for getting GeoJSON from Google Maps directions and wrote this blog post to hype myself up. See the [Github repo](https://github.com/kexin-zhang/gmaps2geojson).*
+*TLDR: I wrote 40 lines of code for getting GeoJSON from Google Maps directions and wrote this blog post to hype myself up. See the [Github repo](https://github.com/kexin-zhang/gmaps2geojson) for setup/usage instructions.*
 
 I was recently inspired by this [blog post](https://chriswhong.com/data-visualization/taxitechblog1/) on the technical details behind [NYC Taxis: A Day in the Life](http://chriswhong.github.io/nyctaxi/). Part of the post details how Chris Whong used Google Maps to fetch route coordinates, so I wrote this super simple Python utility for converting routes to GeoJSON. Since GeoJSON is often used for mapping with JavaScript, I thought it'd be helpful to have some code for generating GeoJSON files -- which I've called **gmaps2geojson**.
 
@@ -50,14 +50,16 @@ d3.json("roadtrip.geojson", function(error, data) {
 See the [full source code](https://github.com/kexin-zhang/kexin-zhang.github.io/blob/master/static/js/gmaps2geojson.js) for defining the map projection and path as well as plotting the base US map.
 
 #### How it works
-[gmaps2geojson](https://github.com/kexin-zhang/gmaps2geojson/blob/master/gmaps2geojson/writer.py) starts by making a call to the Google Maps API. The Google Maps API can be directly queried with this URL:
+*EDIT (Aug. 10, 2018) - Google Maps updated their usage and billing policy on July 11, 2018. This section has been edited to reflect those updates.*
+
+[gmaps2geojson](https://github.com/kexin-zhang/gmaps2geojson/blob/master/gmaps2geojson/writer.py) starts by making a call to the Google Directions API. For this, you'll need a Google Directions API key, which you can get [here](https://developers.google.com/maps/documentation/directions/start). The API can be queried with this URL:
 ```
-https://maps.googleapis.com/maps/api/directions/json?origin="<source>"&destination="<dest>"
+https://maps.googleapis.com/maps/api/directions/json?origin="<source>"&destination="<dest>"&key=<API KEY>
 ```
 
 For example, a GET request to
 ```
-https://maps.googleapis.com/maps/api/directions/json?origin="2131 7th Ave, Seattle, WA 98121"&destination="900 Poplar Pl S, Seattle, WA 98144"
+https://maps.googleapis.com/maps/api/directions/json?origin="2131 7th Ave, Seattle, WA 98121"&destination="900 Poplar Pl S, Seattle, WA 98144&key=<API KEY>"
 ```
 returns the following response JSON:
 
@@ -161,8 +163,6 @@ returns the following response JSON:
    'status':'OK'
 }
 ```
-
-This works even if you're querying without an API key, but if you're going to be querying for a lot of routes, you should probably add down time in between queries so that Google doesn't get mad at you.
 
 The important part of the response is the **overview_polyline** field, which is Google's compressed representation of the route. This polyline can be decoded into lat-lon coordinates using Python's [polyline package](https://pypi.org/project/polyline/). For specifics behind decoding polyline, check out the [Mapbox implementation](https://github.com/mapbox/polyline).
 
