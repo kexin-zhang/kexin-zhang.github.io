@@ -233,7 +233,7 @@ var airbnb_data = [{'count': 42850, 'name': 'Wireless Internet'},
 function barChart(div, data, title) {
      var margin = {
         top: 40,
-        left: 200, 
+        left: 250, 
         bottom: 30,
         right: 20
      };
