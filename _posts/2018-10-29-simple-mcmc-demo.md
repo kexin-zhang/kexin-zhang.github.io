@@ -10,7 +10,7 @@ scripts:
 css: /static/css/mcmc.css
 ---
 
-Markov Chain Monte Carlo (MCMC) is a method for simulation a target distribution. The idea is that this distribution might be hard to sample directly from, so we can use MCMC to simulate draws from the distribution! In this example, I'll touch on some basics of Markov chains and using the Metropolis Hastings algorithm with a random walk. This achieves a simulation of the standard normal distribution.
+Markov Chain Monte Carlo (MCMC) is a method for simulating a target distribution. The idea is that this distribution might be hard to sample directly from, so we can use MCMC to simulate draws from the distribution! In this example, I'll touch on some basics of Markov chains and using the Metropolis Hastings algorithm with a random walk. This achieves a simulation of the standard normal distribution.
 
 <div id="chart"></div>
 <div id="hist"></div>
