@@ -1,0 +1,101 @@
+name,artist,album,date,explicit,features,acousticness,danceability,energy,key,loudness,speechiness,tempo,valence,popularity
+God's Plan,Drake,Scorpion,2018,True,None,0.0332,0.754,0.449,7,-9.211,0.109,77.169,0.357,88
+SAD!,XXXTENTACION,?,2018,True,None,0.258,0.74,0.613,8,-4.88,0.145,75.023,0.473,91
+rockstar (feat. 21 Savage),Post Malone,beerbongs & bentleys,2018,True,21 Savage,0.117,0.587,0.535,5,-6.09,0.0898,159.847,0.14,89
+Psycho (feat. Ty Dolla $ign),Post Malone,beerbongs & bentleys,2018,True,Ty Dolla $ign,0.58,0.739,0.559,8,-8.011,0.117,140.124,0.439,87
+In My Feelings,Drake,Scorpion,2018,True,None,0.0589,0.835,0.626,1,-5.833,0.125,91.03,0.35,90
+Better Now,Post Malone,beerbongs & bentleys,2018,True,None,0.354,0.68,0.563,10,-5.843,0.0454,145.028,0.374,91
+I Like It,Cardi B,Invasion of Privacy,2018,True,"Bad Bunny, J Balvin",0.099,0.816,0.726,5,-3.998,0.129,136.048,0.65,89
+One Kiss (with Dua Lipa),Calvin Harris,One Kiss (with Dua Lipa),2018,False,Dua Lipa,0.037,0.791,0.862,9,-3.24,0.11,123.994,0.592,87
+IDGAF,Dua Lipa,Dua Lipa (Deluxe),2017,True,None,0.0403,0.836,0.544,7,-5.975,0.0943,97.028,0.51,85
+FRIENDS,Marshmello,FRIENDS,2018,True,Anne-Marie,0.205,0.626,0.88,9,-2.384,0.0504,95.079,0.534,86
+Havana,Camila Cabello,Camila,2018,False,Young Thug,0.184,0.765,0.523,2,-4.333,0.03,104.988,0.394,86
+Lucid Dreams,Juice WRLD,Goodbye & Good Riddance,2018,True,None,0.349,0.511,0.566,6,-7.23,0.2,83.903,0.218,90
+Nice For What,Drake,Scorpion,2018,True,None,0.0891,0.586,0.909,8,-6.474,0.0705,93.394,0.757,85
+Girls Like You (feat. Cardi B),Maroon 5,Red Pill Blues (Deluxe),2018,True,Cardi B,0.568,0.851,0.541,0,-6.825,0.0505,124.959,0.448,83
+The Middle,Zedd,The Middle,2018,False,"Maren Morris, Grey",0.171,0.753,0.657,7,-3.061,0.0449,107.01,0.437,86
+All The Stars (with SZA),Kendrick Lamar,Black Panther The Album Music From And Inspired By,2018,True,SZA,0.0605,0.698,0.633,8,-4.946,0.0597,96.924,0.552,82
+no tears left to cry,Ariana Grande,Sweetener,2018,False,None,0.04,0.699,0.713,9,-5.507,0.0594,121.993,0.354,88
+X,Nicky Jam,X,2018,False,J Balvin,0.0364,0.595,0.773,9,-4.736,0.0549,180.073,0.711,82
+Moonlight,XXXTENTACION,?,2018,True,None,0.556,0.921,0.537,9,-5.723,0.0804,128.009,0.711,91
+Look Alive (feat. Drake),BlocBoy JB,Look Alive (feat. Drake),2018,True,Drake,0.00104,0.922,0.581,10,-7.495,0.27,140.022,0.595,84
+"These Days (feat. Jess Glynne, Macklemore & Dan Caplen)",Rudimental,"These Days (feat. Jess Glynne, Macklemore & Dan Caplen)",2018,False,"Jess Glynne, Macklemore, Dan Caplen",0.194,0.653,0.809,0,-4.057,0.0474,92.213,0.55,84
+Te Boté - Remix,Nio Garcia,Te Boté (Remix),2018,True,"Casper Magico, Bad Bunny, Darell, Ozuna, Nicky Jam",0.542,0.903,0.675,11,-3.445,0.214,96.507,0.442,88
+Mine,Bazzi,COSMIC,2018,True,None,0.0161,0.71,0.789,4,-3.874,0.0722,142.929,0.717,84
+Youngblood,5 Seconds of Summer,Youngblood (Deluxe),2018,False,None,0.0169,0.596,0.854,7,-5.114,0.463,120.274,0.152,85
+New Rules,Dua Lipa,Dua Lipa (Complete Edition),2015,False,None,0.00261,0.762,0.7,9,-6.021,0.0694,116.073,0.608,50
+Shape of You,Ed Sheeran,÷ (Deluxe),2017,False,None,0.581,0.825,0.652,1,-3.183,0.0802,95.977,0.931,85
+Love Lies (with Normani),Khalid,Love Lies (with Normani),2018,False,Normani,0.0956,0.708,0.648,6,-5.626,0.0449,143.955,0.338,84
+Meant to Be (feat. Florida Georgia Line),Bebe Rexha,Expectations,2018,False,Florida Georgia Line,0.0476,0.642,0.772,10,-6.61,0.0848,153.995,0.589,69
+Jocelyn Flores,XXXTENTACION,17,2017,True,None,0.469,0.872,0.391,0,-9.144,0.242,134.021,0.437,89
+Perfect,Ed Sheeran,÷ (Deluxe),2017,False,None,0.163,0.599,0.448,8,-6.312,0.0232,95.05,0.168,86
+Taste (feat. Offset),Tyga,Taste (feat. Offset),2018,True,Offset,0.0236,0.884,0.559,0,-7.442,0.12,97.994,0.342,89
+Solo (feat. Demi Lovato),Clean Bandit,Solo (feat. Demi Lovato),2018,False,Demi Lovato,0.0441,0.737,0.636,11,-4.546,0.0437,105.005,0.565,87
+I Fall Apart,Post Malone,Stoney (Deluxe),2016,True,None,0.0689,0.556,0.538,8,-5.408,0.0382,143.95,0.291,86
+Nevermind,Dennis Lloyd,Nevermind,2017,False,None,0.156,0.592,0.691,3,-8.354,0.196,99.976,0.0796,83
+Échame La Culpa,Luis Fonsi,Échame La Culpa,2017,False,Demi Lovato,0.0328,0.726,0.889,0,-3.655,0.0429,96.024,0.649,80
+Eastside (with Halsey & Khalid),benny blanco,Eastside (with Halsey & Khalid),2018,False,"Halsey, Khalid",0.555,0.56,0.68,6,-7.648,0.321,89.391,0.319,92
+Never Be the Same,Camila Cabello,Camila,2018,False,None,0.181,0.637,0.713,0,-4.333,0.0747,129.923,0.243,79
+Wolves,Selena Gomez,Wolves,2017,False,Marshmello,0.129,0.72,0.807,11,-4.59,0.0432,124.946,0.305,83
+changes,XXXTENTACION,?,2018,False,None,0.883,0.669,0.308,11,-10.068,0.029,64.934,0.52,87
+In My Mind,Dynoro,In My Mind,2018,False,Gigi D'Agostino,0.176,0.694,0.77,6,-5.335,0.149,125.905,0.163,90
+River (feat. Ed Sheeran),Eminem,Revival,2017,True,Ed Sheeran,0.142,0.748,0.749,8,-5.916,0.516,90.09,0.659,81
+Dura,Daddy Yankee,Dura,2018,False,None,0.183,0.791,0.848,1,-3.456,0.0506,95.0,0.828,79
+SICKO MODE,Travis Scott,ASTROWORLD,2018,True,None,0.00513,0.834,0.73,8,-3.714,0.222,155.008,0.446,94
+Thunder,Imagine Dragons,Evolve,2017,False,None,0.00671,0.605,0.822,0,-4.833,0.0438,167.997,0.288,86
+Me Niego,Reik,Me Niego,2018,False,"Ozuna, Wisin",0.0543,0.777,0.779,0,-4.449,0.0972,94.023,0.768,82
+Jackie Chan,Tiësto,Jackie Chan,2018,True,"Dzeko, Preme, Post Malone",0.374,0.747,0.834,3,-2.867,0.045,128.005,0.687,85
+Finesse (Remix) [feat. Cardi B],Bruno Mars,Finesse (Remix) [feat. Cardi B],2017,False,Cardi B,0.0185,0.704,0.859,5,-4.877,0.0996,105.115,0.926,80
+Back To You - From 13 Reasons Why – Season 2 Soundtrack,Selena Gomez,Back To You (From 13 Reasons Why – Season 2 Soundtrack),2018,False,None,0.0945,0.601,0.724,6,-4.856,0.0486,102.061,0.508,83
+Let You Down,NF,Perception,2017,False,None,0.298,0.656,0.721,5,-5.665,0.122,148.066,0.468,83
+Call Out My Name,The Weeknd,"My Dear Melancholy,",2018,False,None,0.218,0.489,0.598,1,-4.929,0.036,134.045,0.172,71
+Ric Flair Drip (& Metro Boomin),Offset,Without Warning,2017,True,Metro Boomin,0.149,0.88,0.428,9,-8.28,0.206,100.007,0.333,84
+Happier,Marshmello,Happier,2018,False,Bastille,0.191,0.687,0.792,5,-2.749,0.0452,100.015,0.671,95
+Too Good At Goodbyes,Sam Smith,The Thrill Of It All (Special Edition),2017,False,None,0.652,0.698,0.375,5,-8.279,0.0491,91.92,0.534,82
+Freaky Friday (feat. Chris Brown),Lil Dicky,Freaky Friday (feat. Chris Brown),2018,True,Chris Brown,0.147,0.755,0.599,8,-5.042,0.224,133.123,0.755,81
+Believer,Imagine Dragons,Evolve,2017,False,None,0.0622,0.776,0.78,10,-4.374,0.128,124.949,0.666,87
+FEFE (feat. Nicki Minaj & Murda Beatz),6ix9ine,FEFE (feat. Nicki Minaj & Murda Beatz),2018,True,"Nicki Minaj, Murda Beatz",0.088,0.931,0.387,1,-9.127,0.412,125.978,0.376,87
+Rise,Jonas Blue,Blue,2018,False,Jack & Jack,0.327,0.687,0.785,1,-4.65,0.0333,106.046,0.655,67
+Body (feat. brando),Loud Luxury,Body (feat. brando),2017,False,Brando,0.0476,0.752,0.764,1,-4.399,0.038,121.958,0.582,67
+XO TOUR Llif3,Lil Uzi Vert,Luv Is Rage 2,2017,True,None,0.00264,0.732,0.75,11,-6.366,0.231,155.096,0.401,85
+Sin Pijama,Becky G,Sin Pijama,2018,False,Natti Natasha,0.354,0.791,0.745,11,-3.695,0.0464,94.014,0.82,85
+2002,Anne-Marie,Speak Your Mind (Deluxe),2018,False,None,0.0372,0.697,0.683,1,-2.881,0.117,96.133,0.603,82
+Nonstop,Drake,Scorpion,2018,True,None,0.0164,0.912,0.412,7,-8.074,0.124,154.983,0.422,88
+Fuck Love (feat. Trippie Redd),XXXTENTACION,17,2017,True,Trippie Redd,0.0172,0.797,0.533,0,-9.74,0.0412,131.036,0.329,87
+In My Blood,Shawn Mendes,Shawn Mendes,2018,False,None,0.0573,0.622,0.712,5,-7.321,0.066,140.025,0.487,84
+Silence,Marshmello,Silence,2017,False,Khalid,0.256,0.52,0.761,4,-3.093,0.0853,141.971,0.286,83
+God is a woman,Ariana Grande,Sweetener,2018,True,None,0.0233,0.602,0.658,1,-5.934,0.0558,145.031,0.268,88
+Déjala que vuelva (feat. Manuel Turizo),Piso 21,Ubuntu,2018,False,Manuel Turizo,0.0482,0.681,0.788,1,-4.323,0.0785,170.019,0.839,72
+Flames,David Guetta,7,2018,False,Sia,0.0817,0.631,0.649,5,-5.892,0.0385,93.95,0.421,67
+What Lovers Do,Maroon 5,Red Pill Blues (Deluxe),2017,False,SZA,0.0788,0.799,0.597,5,-5.131,0.0611,110.001,0.419,35
+"Taki Taki (with Selena Gomez, Ozuna & Cardi B)",DJ Snake,"Taki Taki (with Selena Gomez, Ozuna & Cardi B)",2018,True,"Selena Gomez, Ozuna, Cardi B",0.153,0.841,0.798,1,-4.206,0.229,95.948,0.591,97
+"Let Me Go (with Alesso, Florida Georgia Line & watt)",Hailee Steinfeld,"Let Me Go (with Alesso, Florida Georgia Line & watt)",2017,False,"Alesso, Florida Georgia Line, watt",0.0337,0.663,0.708,8,-4.154,0.0473,103.073,0.742,83
+Feel It Still,Portugal. The Man,Woodstock,2017,False,None,0.0417,0.801,0.795,1,-5.115,0.0504,79.028,0.754,81
+Pray For Me (with Kendrick Lamar),The Weeknd,Black Panther The Album Music From And Inspired By,2018,True,Kendrick Lamar,0.0762,0.735,0.677,2,-4.979,0.093,100.584,0.188,79
+Walk It Talk It,Migos,Culture II,2018,True,Drake,0.0739,0.909,0.628,2,-5.456,0.201,145.905,0.406,82
+Him & I (with Halsey),G-Eazy,The Beautiful & Damned,2017,True,Halsey,0.0534,0.589,0.731,2,-6.343,0.0868,87.908,0.191,80
+Candy Paint,Post Malone,beerbongs & bentleys,2018,True,None,0.627,0.67,0.654,4,-5.944,0.153,180.024,0.438,82
+Congratulations,Post Malone,Stoney (Deluxe),2016,True,Quavo,0.215,0.63,0.804,6,-4.183,0.0363,123.146,0.492,84
+"1, 2, 3 (feat. Jason Derulo & De La Ghetto)",Sofia Reyes,"1, 2, 3 (feat. Jason Derulo & De La Ghetto)",2018,False,"Jason Derulo, De La Ghetto",0.165,0.792,0.895,1,-3.112,0.0589,94.968,0.794,81
+Criminal,Natti Natasha,Criminal,2017,False,Ozuna,0.03,0.814,0.813,2,-3.023,0.0561,79.997,0.839,80
+Plug Walk,Rich The Kid,The World Is Yours,2018,True,None,0.202,0.876,0.519,11,-6.531,0.143,94.981,0.158,83
+lovely (with Khalid),Billie Eilish,lovely (with Khalid),2018,False,Khalid,0.934,0.351,0.296,4,-10.109,0.0333,115.284,0.12,89
+Stir Fry,Migos,Culture II,2018,True,None,0.00299,0.815,0.816,2,-5.474,0.269,181.967,0.498,79
+HUMBLE.,Kendrick Lamar,DAMN.,2017,True,None,0.000282,0.908,0.621,1,-6.638,0.102,150.011,0.421,84
+Vaina Loca,Ozuna,Aura,2018,False,Manuel Turizo,0.315,0.754,0.805,6,-4.249,0.0752,93.983,0.555,88
+Perfect Duet (Ed Sheeran & Beyoncé),Ed Sheeran,Perfect Duet (Ed Sheeran & Beyoncé),2017,False,Beyoncé,0.779,0.587,0.299,8,-7.365,0.0263,94.992,0.356,82
+Corazón (feat. Nego do Borel),Maluma,F.A.M.E.,2018,False,Nego do Borel,0.328,0.722,0.738,9,-6.073,0.247,198.075,0.748,78
+Young Dumb & Broke,Khalid,American Teen,2017,False,None,0.199,0.798,0.539,1,-6.351,0.0421,136.949,0.394,83
+Síguelo Bailando,Ozuna,Odisea,2017,False,None,0.165,0.855,0.664,9,-7.11,0.0607,98.015,0.626,79
+Downtown,Anitta,Downtown,2017,False,J Balvin,0.18,0.775,0.679,4,-4.985,0.135,166.008,0.619,79
+Bella,Wolfine,Bella,2017,False,None,0.128,0.909,0.493,3,-6.688,0.0735,94.016,0.844,74
+Promises (with Sam Smith),Calvin Harris,Promises (with Sam Smith),2018,False,"Sam Smith, Jessie Reyez",0.0119,0.781,0.768,11,-5.991,0.0394,123.07,0.486,91
+Yes Indeed,Lil Baby,Harder Than Ever,2018,True,Drake,0.035,0.964,0.346,5,-9.309,0.53,119.958,0.562,85
+I Like Me Better,Lauv,I met you when I was 18. (the playlist),2018,False,None,0.535,0.752,0.505,9,-7.621,0.253,91.97,0.419,72
+This Is Me,Keala Settle,This Is Me,2017,False,The Greatest Showman Ensemble,0.00583,0.284,0.704,2,-7.276,0.186,191.702,0.1,68
+Everybody Dies In Their Nightmares,XXXTENTACION,17,2017,True,None,0.847,0.734,0.57,7,-7.066,0.133,129.953,0.689,85
+Rewrite The Stars,Zac Efron,Rewrite The Stars,2017,False,Zendaya,0.0716,0.684,0.619,10,-7.005,0.0386,125.046,0.284,69
+I Miss You (feat. Julia Michaels),Clean Bandit,I Miss You (feat. Julia Michaels),2017,False,Julia Michaels,0.245,0.638,0.658,3,-6.318,0.0456,105.076,0.33,70
+No Brainer,DJ Khaled,No Brainer,2018,True,"Justin Bieber, Quavo, Chance the Rapper",0.0733,0.552,0.76,0,-4.706,0.342,135.702,0.639,84
+Dusk Till Dawn - Radio Edit,ZAYN,Dusk Till Dawn (Radio Edit),2017,False,Sia,0.101,0.258,0.437,11,-6.593,0.039,180.043,0.0967,82
+Be Alright,Dean Lewis,Be Alright,2018,True,None,0.697,0.553,0.586,11,-6.319,0.0362,126.684,0.443,91
