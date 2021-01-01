@@ -1,6 +1,6 @@
 ---
 title: Visualizing Public Transportation in Four Cities I Visited
-layout: d3post
+layout: legacyd3post
 author: Kexin Zhang
 script: /static/js/publictransport.js
 css: /static/css/publictransportation.css

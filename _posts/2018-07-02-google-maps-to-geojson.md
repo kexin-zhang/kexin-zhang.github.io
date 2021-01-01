@@ -1,6 +1,6 @@
 ---
 title: Converting Google Maps Routes to GeoJSON with Python (and plotting the result with D3)
-layout: d3post
+layout: legacyd3post
 author: Kexin Zhang
 script: /static/js/gmaps2geojson.js
 css: /static/css/gmaps2geojson.css

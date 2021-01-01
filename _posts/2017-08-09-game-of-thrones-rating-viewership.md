@@ -1,6 +1,6 @@
 ---
 title: Game of Thrones Visualized - Viewership, Ratings, and Deaths
-layout: d3post
+layout: legacyd3post
 author: Kexin Zhang
 script: /static/js/got.js
 css: /static/css/got.css

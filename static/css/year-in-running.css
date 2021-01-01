@@ -1,0 +1,28 @@
+#heatmap img {
+    max-width: 650px;
+    padding-bottom: 10px;
+}
+
+#heatmap {
+    display: flex;
+    justify-content: center;
+}
+
+#paths {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+text {
+    font-family: sans-serif;
+    font-size: 8px;
+    fill: #2c3e50;
+}
+
+.max-width-1200 {
+    max-width: 1200px;
+    margin: auto;
+}

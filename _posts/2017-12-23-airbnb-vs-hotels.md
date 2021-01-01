@@ -1,6 +1,6 @@
 ---
 title: Visualizing Airbnb vs. Hotels in New York City (or a blog post about my class project)
-layout: d3post
+layout: legacyd3post
 author: Kexin Zhang
 script: /static/js/airbnb-vs-hotels.js
 css: /static/css/airbnb-vs-hotels.css

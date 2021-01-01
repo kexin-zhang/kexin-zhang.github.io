@@ -1,6 +1,6 @@
 ---
 title: Some Quick Insight into Expectation Maximization
-layout: d3post
+layout: legacyd3post
 author: Kexin Zhang
 math: include
 ---

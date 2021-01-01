@@ -1,7 +1,7 @@
 ---
 title: A Simple Markov Chain Monte Carlo Example Visualized with D3
 author: Kexin Zhang
-layout: d3post
+layout: legacyd3post
 math: include
 scripts:
     - /static/js/jstat.min.js
