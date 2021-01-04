@@ -120,7 +120,6 @@ const drawWeeklyGraph = ({ data, divId, field, title}) => {
     (v) => d3.sum(v, (d) => d.val),
     (d) => d3.timeWeek.count(d3.utcYear(d.date), d.date)
   );
-  console.log(weeklyData);
 
   const start = new Date(Date.UTC(2020, 0, 1));
   const x = d3
@@ -132,7 +131,6 @@ const drawWeeklyGraph = ({ data, divId, field, title}) => {
     (max, key) => (weeklyData.get(key) > max ? weeklyData.get(key) : max),
     0
   );
-  console.log(maxDistance);
   const y = d3
     .scaleLinear()
     .domain([0, maxDistance])

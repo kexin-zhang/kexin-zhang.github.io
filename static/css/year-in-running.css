@@ -1,6 +1,7 @@
 #heatmap img {
     max-width: 650px;
     padding-bottom: 10px;
+    width: 85%;
 }
 
 #heatmap {
